@@ -1,4 +1,37 @@
 baseURL = 'https://goisra.github.io/goisra.dev/'
-languageCode = 'en-us'
+languageCode = 'us'
 title = 'Israel Jesús'
 theme = 'PaperMod'
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "about"
+
+[permalinks]
+  posts = "/:section/:year/:slug"
+
+[params]
+  author = "Isarel Jesús"
+  defaultTheme = "light"
+  displayFullLangName = true
+
+  [params.profileMode]
+    enabled = true
+    subtitle = "Software Development Engineer"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/goisra"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/israel-jesús-garcía-osorio-5675492b8/"
+  [[params.socialIcons]]
+    name = "gmail"
+    url = "mailto:jesusgarcia2102.job@gmail.com?subject=Desde Web Site:?body=Hola%20Jes%C3%BAs, "
+  [[params.socialIcons]]
+    name = "discord"
+    url = "https://discord.gg/bBpgBRBT"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/go_isra?igsh=MXd0Z3F1MmtiMnpsZw%3D%3D&utm_source=qr"
