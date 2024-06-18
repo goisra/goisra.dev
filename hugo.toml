@@ -6,7 +6,7 @@ theme = 'PaperMod'
 [menu]
   [[menu.main]]
     name = "About"
-    url = "about"
+    url = "docs"
 
 [permalinks]
   posts = "/:section/:year/:slug"
