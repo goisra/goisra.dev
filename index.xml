@@ -6,14 +6,15 @@
     <description>Recent content on Israel Jesús</description>
     <generator>Hugo -- 0.112.4</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Jun 2024 20:16:50 -0600</lastBuildDate>
     <atom:link href="https://goisra.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
+      <title>About</title>
       <link>https://goisra.dev/docs/test/</link>
-      <pubDate>Mon, 17 Jun 2024 20:16:50 -0600</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goisra.dev/docs/test/</guid>
-      <description>This is a test page This is the content</description>
+      <description>Hey, there! 👋
+I am Israel, a Software Development Engineer 👩🏻‍💻☁️
+🔭 I’m currently a member of Microsoft Student Ambassadors.</description>
     </item>
   </channel>
 </rss>
