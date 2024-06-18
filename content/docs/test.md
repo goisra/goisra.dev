@@ -1,9 +1,10 @@
 +++
-title = 'Test'
-date = 2024-06-17T20:16:50-06:00
+title = 'About'
 draft = false
 +++
 
-## This is a test page 
+Hey, there! 👋
 
-This is the content
+I am Israel, a Software Development Engineer 👩🏻‍💻☁️
+
+🔭 I’m currently a member of Microsoft Student Ambassadors.
