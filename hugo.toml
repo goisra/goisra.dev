@@ -7,6 +7,12 @@ theme = 'PaperMod'
   [[menu.main]]
     name = "About"
     url = "docs"
+  [[menu.main]]
+    name = "Projects"
+    url = "docs"
+  [[menu.main]]
+    name = "Certifications"
+    url = "docs"
 
 [permalinks]
   posts = "/:section/:year/:slug"
