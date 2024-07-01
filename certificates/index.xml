@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Israel Jesús</title>
-    <link>https://goisra.dev/</link>
-    <description>Recent content on Israel Jesús</description>
+    <title>Certificates on Israel Jesús</title>
+    <link>https://goisra.dev/certificates/</link>
+    <description>Recent content in Certificates on Israel Jesús</description>
     <generator>Hugo -- 0.112.4</generator>
     <language>en</language>
-    <atom:link href="https://goisra.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://goisra.dev/docs/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/docs/test/</guid>
-      <description>Hey, there! 👋
-I am Israel, a Software Development Engineer 👩🏻‍💻☁️
-🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.</description>
-    </item>
+    <atom:link href="https://goisra.dev/certificates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Certifications</title>
       <link>https://goisra.dev/certificates/certifications/</link>
@@ -28,15 +19,6 @@ Programa especializado: Soporte de Tecnologías de la Información de Google Goo
 Administración de sistemas y servicios de infraestructura de TI Google Noviembre 2023 https://www.coursera.org/account/accomplishments/records/26GSGJNT9W8A
 Los bits y bytes de las redes informáticas Google Noviembre 2023 https://www.coursera.org/account/accomplishments/records/LNA32PWT454F
 Seguridad informática: defensa contra las artes oscuras digitales Google Noviembre 2023 https://www.</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://goisra.dev/projects/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/projects/projects/</guid>
-      <description>Inclusive Education Platform for People with Disabilities integrated with AI Junio, 2024 https://goisra.github.io/WHEX/
-Intelligent Energy Management for Federal Electricity Commission (CFE) Mayo, 2024 https://devpost.com/2311082152
-Security Incident Management System Development (SGIS) for Converge Technology Solutions Abril, 2024 https://convergetp.com/</description>
     </item>
   </channel>
 </rss>
