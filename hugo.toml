@@ -15,7 +15,7 @@ theme = 'PaperMod'
     url = "projects"
     [[menu.main.submenu]]
       name = "WHEX"
-      url = "WHEX"
+      url = "projects"
     [[menu.main.submenu]]
       name = "ElectricONtrol"
       url = "projects"
