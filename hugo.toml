@@ -9,10 +9,10 @@ theme = 'PaperMod'
     url = "docs"
   [[menu.main]]
     name = "Projects"
-    url = "docs"
+    url = "projects"
   [[menu.main]]
     name = "Certifications"
-    url = "docs"
+    url = "certificates"
 
 [permalinks]
   posts = "/:section/:year/:slug"
