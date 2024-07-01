@@ -8,18 +8,21 @@ theme = 'PaperMod'
     name = "About"
     url = "docs"
   [[menu.main]]
-    name = "WHEX"
-    url = "projects"
-  [[menu.main]]
-    name = "ElectricONtrol"
-    url = "projects"
-  [[menu.main]]
-    name = "ServiceNow_Security"
-    url = "projects"    
-  [[menu.main]]
     name = "Certifications"
     url = "certificates"
-
+  [[menu.main]]
+    name = "Projects"
+    url = "#"
+    [[menu.main.submenu]]
+      name = "WHEX"
+      url = "projects"
+    [[menu.main.submenu]]
+      name = "ElectricONtrol"
+      url = "projects"
+    [[menu.main.submenu]]
+      name = "ServiceNow_Security"
+      url = "projects"
+      
 [permalinks]
   posts = "/:section/:year/:slug"
 
