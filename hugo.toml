@@ -12,7 +12,7 @@ theme = 'PaperMod'
     url = "certificates"
   [[menu.main]]
     name = "Projects"
-    url = "#"
+    url = "projects"
     [[menu.main.submenu]]
       name = "WHEX"
       url = "projects"
@@ -22,7 +22,7 @@ theme = 'PaperMod'
     [[menu.main.submenu]]
       name = "ServiceNow_Security"
       url = "projects"
-      
+
 [permalinks]
   posts = "/:section/:year/:slug"
 
