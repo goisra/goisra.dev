@@ -28,7 +28,7 @@ theme = 'PaperMod'
     url = "certificates"
     [[menu.main.submenu]]
     name = "Google_Administracion"
-    url = "certificates"|
+    url = "certificates"
     [[menu.main.submenu]]
     name = "Google_Bits"
     url = "certificates"
