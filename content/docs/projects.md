@@ -3,8 +3,14 @@ title = 'Projects'
 draft = false
 +++
 
-Hey, there! 👋
+Inclusive Education Platform for People with Disabilities integrated with AI
+Junio, 2024
+https://goisra.github.io/WHEX/
 
-I am Israel, a Software Development Engineer 👩🏻‍💻☁️
+Intelligent Energy Management for Federal Electricity Commission (CFE)
+Mayo, 2024
+https://devpost.com/2311082152
 
-🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.
+Security Incident Management System Development (SGIS) for Converge Technology Solutions
+Abril, 2024
+https://convergetp.com/
