@@ -8,8 +8,14 @@ theme = 'PaperMod'
     name = "About"
     url = "docs"
   [[menu.main]]
-    name = "Projects"
+    name = "WHEX"
     url = "projects"
+  [[menu.main]]
+    name = "ElectricONtrol"
+    url = "projects"
+  [[menu.main]]
+    name = "ServiceNow_Security"
+    url = "projects"    
   [[menu.main]]
     name = "Certifications"
     url = "certificates"
