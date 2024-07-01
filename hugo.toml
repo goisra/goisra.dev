@@ -4,15 +4,49 @@ title = 'Israel Jesús'
 theme = 'PaperMod'
 
 [menu]
+
   [[menu.main]]
     name = "About"
-    url = "docs"
+    url = "about"
+
+
   [[menu.main]]
     name = "Certifications"
     url = "certificates"
+
+    [[menu.main.submenu]]
+    name = "AWS_GenAI"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "CCNA"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Santander"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Soporte"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Administracion"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Bits"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Bits"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Sistemas"
+    url = "certificates"
+    [[menu.main.submenu]]
+    name = "Google_Aspectos"
+    url = "certificates"
+
+
   [[menu.main]]
     name = "Projects"
     url = "projects"
+
     [[menu.main.submenu]]
       name = "WHEX"
       url = "projects"
@@ -22,6 +56,7 @@ theme = 'PaperMod'
     [[menu.main.submenu]]
       name = "ServiceNow_Security"
       url = "projects"
+
 
 [permalinks]
   posts = "/:section/:year/:slug"
