@@ -3,11 +3,6 @@ languageCode = 'us'
 title = 'Israel Jesús'
 theme = 'PaperMod'
 
-# if it's an external image, update below for true
-# better with square images
-external-image: false
-picture: public/assets/images/Foto_Social.jpg
-
 [menu]
 
   [[menu.main]]
