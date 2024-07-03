@@ -1,5 +1,5 @@
 +++
-title = 'Aspectos básicos de la asistencia técnica'
+title = 'Aspectos de la asistencia técnica'
 draft = false
 +++
 

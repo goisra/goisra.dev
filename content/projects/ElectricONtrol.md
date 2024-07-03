@@ -1,5 +1,5 @@
 +++
-title = 'Security Incident Management System Development (SGIS) for Converge Technology Solutions'
+title = 'Intelligent Energy Management for Federal Electricity Commission (CFE)'
 draft = false
 +++
 

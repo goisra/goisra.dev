@@ -3,6 +3,11 @@ languageCode = 'us'
 title = 'Israel Jesús'
 theme = 'PaperMod'
 
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: public/assets/images/Foto_Social.jpg
+
 [menu]
 
   [[menu.main]]
@@ -11,36 +16,36 @@ theme = 'PaperMod'
 
 
   [[menu.main]]
-    name = "Certifications"
-    url = "certificates"
+    name = "Blog"
+    url = "blog"
 
     [[menu.main.submenu]]
     name = "AWS_GenAI"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "CCNA"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Santander"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Soporte"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Administracion"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Bits"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Bits"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Sistemas"
-    url = "certificates"
+    url = "blog"
     [[menu.main.submenu]]
     name = "Google_Aspectos"
-    url = "certificates"
+    url = "blog"
 
 
   [[menu.main]]

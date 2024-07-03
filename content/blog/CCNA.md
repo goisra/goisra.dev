@@ -1,5 +1,5 @@
 +++
-title = 'CCNA: Introduction to Networks'
+title = 'CCNA: Networks'
 draft = false
 +++
 
