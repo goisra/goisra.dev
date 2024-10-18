@@ -1,4 +1,5 @@
 name: Publish to GH Pages
+
 on:
   push:
     branches:
@@ -8,33 +9,33 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout source
+      - name: Checkout source (main branch)
         uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules: true # Esto asegura que los submódulos se incluyan al hacer el checkout
 
-      - name: Checkout destination
+      - name: Checkout destination (gh-pages branch)
         uses: actions/checkout@v3
         if: github.ref == 'refs/heads/main'
         with:
           ref: gh-pages
-          path: built-site
+          path: built-site # La carpeta donde se va a clonar la rama `gh-pages`
 
       - name: Setup Hugo
-        run: |
-          curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.112.4/hugo_extended_0.112.4_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo          
-      - name: Build
-        run: ${RUNNER_TEMP}/hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest' # Esto instala la última versión de Hugo automáticamente
 
-      - name: Deploy
+      - name: Build the site
+        run: hugo
+
+      - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main'
         run: |
-          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          cp -R public/* ${GITHUB_WORKSPACE}/built-site/ # Copia el sitio generado en `public` a `built-site`
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
-          git config user.name 'dhij'
-          git config user.email 'davidhwang.ij@gmail.com'
-          git commit -m 'Updated site'
-          git push          
+          git commit -m 'Update site' || echo "No changes to commit"
+          git push

@@ -11,7 +11,7 @@ theme = 'PaperMod'
 
 
   [[menu.main]]
-    name = "Blog"
+    name = "Badges"
     url = "blog"
 
     [[menu.main.submenu]]
@@ -75,13 +75,13 @@ theme = 'PaperMod'
     url = "https://github.com/goisra"
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/israel-jesús-garcía-osorio-5675492b8/"
+    url = "https://linkedin.com/in/israel-jesús/"
   [[params.socialIcons]]
     name = "gmail"
     url = "mailto:jesusgarcia2102.job@gmail.com?subject=Desde Web Site:?body=Hola%20Jes%C3%BAs, "
   [[params.socialIcons]]
     name = "discord"
-    url = "https://discord.gg/bBpgBRBT"
+    url = "https://discord.gg/tTUmg96W"
   [[params.socialIcons]]
     name = "instagram"
-    url = "https://www.instagram.com/go_isra?igsh=MXd0Z3F1MmtiMnpsZw%3D%3D&utm_source=qr"
+    url = "https://www.instagram.com/go_isra?"
