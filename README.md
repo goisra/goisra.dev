@@ -1,1 +1,1 @@
-🌎 Website: [https://goisra.dev/](https://goisra.dev/)
+🌎 My personal website: [goisra.dev](https://goisra.dev/)
