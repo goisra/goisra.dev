@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on Israel Jesús</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://goisra.dev/projects/</link>
     <description>Recent content in Projects on Israel Jesús</description>
     <generator>Hugo -- 0.128.2</generator>
     <language>us</language>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://goisra.dev/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inclusive Education Platform for People with Disabilities integrated with AI</title>
-      <link>http://localhost:1313/projects/whex/</link>
+      <link>https://goisra.dev/projects/whex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/whex/</guid>
+      <guid>https://goisra.dev/projects/whex/</guid>
       <description>Junio, 2024
 https://goisra.github.io/WHEX/
 A platform dedicated to empowering people about the inclusion and appropriate treatment of people with disabilities. Through educational resources, workshops and interactive programmes, we aim to foster a more inclusive and respectful society, where all people, with and without disabilities, are valued and treated with dignity. Our mission is to provide the necessary tools to remove barriers and promote equality, ensuring that all people have the opportunity to participate fully in all aspects of community life.</description>
     </item>
     <item>
       <title>Intelligent Energy Management for Federal Electricity Commission (CFE)</title>
-      <link>http://localhost:1313/projects/electricontrol/</link>
+      <link>https://goisra.dev/projects/electricontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/electricontrol/</guid>
+      <guid>https://goisra.dev/projects/electricontrol/</guid>
       <description>Abril, 2024
 https://devpost.com/2311082152
 Application focused on reducing energy consumption in critical peaks. Optimize the distribution of available energy. Inform and educate users about the efficient use of energy.</description>
     </item>
     <item>
       <title>Security Incident Management System Development (SGIS) for Converge Technology Solutions</title>
-      <link>http://localhost:1313/projects/servicenow_security/</link>
+      <link>https://goisra.dev/projects/servicenow_security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/servicenow_security/</guid>
+      <guid>https://goisra.dev/projects/servicenow_security/</guid>
       <description>Mayo, 2024
 https://convergetp.com/
 Develop a system capable of storing information and notifying a person or organization about a security incident that addresses all phases of security incident management, from initial detection to recovery and post-incident analysis. The ISMS must be adaptable to the specific needs of a wide range of organizations, from small businesses to large corporations.</description>

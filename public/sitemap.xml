@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/about/</loc>
+    <loc>https://goisra.dev/about/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://goisra.dev/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_administracion/</loc>
+    <loc>https://goisra.dev/blog/google_administracion/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_aspectos/</loc>
+    <loc>https://goisra.dev/blog/google_aspectos/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/aws_genai/</loc>
+    <loc>https://goisra.dev/blog/aws_genai/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://goisra.dev/blog/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://goisra.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/ccna/</loc>
+    <loc>https://goisra.dev/blog/ccna/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/whex/</loc>
+    <loc>https://goisra.dev/projects/whex/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/electricontrol/</loc>
+    <loc>https://goisra.dev/projects/electricontrol/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/santander/</loc>
+    <loc>https://goisra.dev/blog/santander/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://goisra.dev/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_bits/</loc>
+    <loc>https://goisra.dev/blog/google_bits/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_soporte/</loc>
+    <loc>https://goisra.dev/blog/google_soporte/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://goisra.dev/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/servicenow_security/</loc>
+    <loc>https://goisra.dev/projects/servicenow_security/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_seguridad/</loc>
+    <loc>https://goisra.dev/blog/google_seguridad/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/google_sistemas/</loc>
+    <loc>https://goisra.dev/blog/google_sistemas/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://goisra.dev/tags/</loc>
   </url>
 </urlset>
