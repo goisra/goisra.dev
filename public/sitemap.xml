@@ -2,16 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/docs/</loc>
-    <lastmod>2024-06-17T20:16:50-06:00</lastmod>
+    <loc>http://localhost:1313/about/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-17T20:16:50-06:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/test/</loc>
-    <lastmod>2024-06-17T20:16:50-06:00</lastmod>
+    <loc>http://localhost:1313/blog/google_administracion/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_aspectos/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/aws_genai/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/ccna/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/whex/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/electricontrol/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/santander/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_bits/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_soporte/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+  </url><url>
+    <loc>http://localhost:1313/projects/servicenow_security/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_seguridad/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/google_sistemas/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

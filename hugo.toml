@@ -5,83 +5,103 @@ theme = 'PaperMod'
 
 [menu]
 
+  # "About" siempre visible en la barra de navegación
   [[menu.main]]
     name = "About"
     url = "about"
+    weight = 1  
 
-
+  # "Blog" dentro del menú desplegable
   [[menu.main]]
-    name = "Badges"
+    name = "Blog"
     url = "blog"
+    weight = 2  
 
     [[menu.main.submenu]]
-    name = "AWS_GenAI"
-    url = "blog"
+      name = "AWS_GenAI"
+      url = "blog/aws-genai"
     [[menu.main.submenu]]
-    name = "CCNA"
-    url = "blog"
+      name = "CCNA"
+      url = "blog/ccna"
     [[menu.main.submenu]]
-    name = "Santander"
-    url = "blog"
+      name = "Santander"
+      url = "blog/santander"
     [[menu.main.submenu]]
-    name = "Google_Soporte"
-    url = "blog"
+      name = "Google Soporte"
+      url = "blog/google-soporte"
     [[menu.main.submenu]]
-    name = "Google_Administracion"
-    url = "blog"
+      name = "Google Administración"
+      url = "blog/google-administracion"
     [[menu.main.submenu]]
-    name = "Google_Bits"
-    url = "blog"
+      name = "Google Bits"
+      url = "blog/google-bits"
     [[menu.main.submenu]]
-    name = "Google_Bits"
-    url = "blog"
+      name = "Google Sistemas"
+      url = "blog/google-sistemas"
     [[menu.main.submenu]]
-    name = "Google_Sistemas"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Aspectos"
-    url = "blog"
+      name = "Google Aspectos"
+      url = "blog/google-aspectos"
 
-
+  # "Projects" dentro del menú desplegable
   [[menu.main]]
     name = "Projects"
     url = "projects"
+    weight = 3  
 
     [[menu.main.submenu]]
       name = "WHEX"
-      url = "projects"
+      url = "projects/whex"
     [[menu.main.submenu]]
       name = "ElectricONtrol"
-      url = "projects"
+      url = "projects/electricontrol"
     [[menu.main.submenu]]
-      name = "ServiceNow_Security"
-      url = "projects"
-
+      name = "ServiceNow Security"
+      url = "projects/servicenow-security"
 
 [permalinks]
   posts = "/:section/:year/:slug"
 
 [params]
-  author = "Isarel Jesús"
+  author = "Israel Jesús"
   defaultTheme = "light"
   displayFullLangName = true
 
+  # Activa el menú en un ícono desplegable
+  showMenu = true  
+
   [params.profileMode]
     enabled = true
-    subtitle = "Software Development Engineer"
+    subtitle = "Technical Cloud @ Nike"
 
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/goisra"
+
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/israel-jesús/"
+
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@goisra.CloudLab"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/go__isra"
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/go_isra"
+
+  [[params.socialIcons]]
+    name = "facebook"
+    url = "https://www.facebook.com/share/1WeQXVWXxG/?mibextid=wwXIfr"
+
+  [[params.socialIcons]]
+    name = "tiktok"
+    url = "https://www.tiktok.com/@go_isra"
+
   [[params.socialIcons]]
     name = "gmail"
     url = "mailto:jesusgarcia2102.job@gmail.com?subject=Desde Web Site:?body=Hola%20Jes%C3%BAs, "
-  [[params.socialIcons]]
-    name = "discord"
-    url = "https://discord.gg/tTUmg96W"
-  [[params.socialIcons]]
-    name = "instagram"
-    url = "https://www.instagram.com/go_isra?"
+
