@@ -76,23 +76,25 @@
 }
 
  
-.about-content-plain .post-single {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
- 
-body.about .post-content,
-body.about .post-single,
-body.about .entry-content,
-body.about article {
+body[data-theme] .about-content-plain,
+body[data-theme] .about-content-plain *,
+.about-content-plain,
+.about-content-plain * {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+}
+
+ 
+.post-single,
+.post-content,
+.page-header,
+.entry-content,
+article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
     padding: 0 !important;
 }
 </style>

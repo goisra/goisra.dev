@@ -78,23 +78,25 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
 }
 
  
-.about-content-plain .post-single {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
- 
-body.about .post-content,
-body.about .post-single,
-body.about .entry-content,
-body.about article {
+body[data-theme] .about-content-plain,
+body[data-theme] .about-content-plain *,
+.about-content-plain,
+.about-content-plain * {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
+}
+
+ 
+.post-single,
+.post-content,
+.page-header,
+.entry-content,
+article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
     padding: 0 !important;
 }
 </style>
@@ -218,11 +220,9 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
 <main class="main">
 <main class="main">
   <div class="about-content-plain">
-    <header class="page-header">
-      <h1>About</h1>
-    </header>
+    <h1>About</h1>
     
-    <div class="post-content"><p>Hey, there! 👋</p>
+    <div class="about-text"><p>Hey, there! 👋</p>
 <p>I’m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.</p>
 <p>My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I’ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.</p>
 <p>Beyond my professional role, I’m the founder and leader of the first AWS User Group in Puebla. I’m committed to growing technology communities, sharing knowledge, and creating spaces where people can learn, collaborate, and innovate together. I’ve participated as a speaker and contributor in international tech communities, reinforcing my belief in technology as a tool for collective impact.</p>
@@ -237,18 +237,18 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
   max-width: var(--main-width);
   margin: 0 auto;
   padding: 0 var(--gap);
-}
-
-.about-content-plain .page-header {
-  margin-bottom: 2rem;
   background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
 }
 
-.about-content-plain .post-content {
+.about-content-plain h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: transparent !important;
+}
+
+.about-text {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -258,28 +258,24 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
   line-height: 1.8;
 }
 
-.about-content-plain h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.about-content-plain .post-content p {
+.about-text p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: var(--content);
+  background: transparent !important;
 }
 
  
+.about-content-plain *,
 .about-content-plain .post-single,
-.about-content-plain .article,
-.about-content-plain .entry-content {
+.about-content-plain .post-content,
+.about-content-plain .page-header,
+.about-content-plain .entry-content,
+.about-content-plain article {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-  padding: 0 !important;
 }
 </style>
     </main>
