@@ -36,6 +36,8 @@ jobs:
         run: |
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/ # Copia el sitio generado en `public` a `built-site`
           cd ${GITHUB_WORKSPACE}/built-site
+          # Add timestamp to force changes
+          echo "<!-- Build timestamp: $(date) -->" >> index.html
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
