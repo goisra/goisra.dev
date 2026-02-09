@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Networking on Israel Jesús</title>
+    <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/networking/</link>
+    <description>Recent content in Networking on Israel Jesús</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>us</language>
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ejemplo de Artículo 2</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-2/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-2/</guid>
+      <description>Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</description>
+    </item>
+  </channel>
+</rss>

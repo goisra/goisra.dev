@@ -1,0 +1,144 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Params.description }}
+  <div class="post-description">{{ .Params.description }}</div>
+  {{- end }}
+</header>
+
+<div class="post-content">
+<div class="blog-grid">
+  {{- range .Pages }}
+  <article class="blog-card">
+    <div class="blog-card-content">
+      <div class="blog-card-header">
+        {{- if .Params.icon }}
+        <span class="blog-icon">{{ .Params.icon }}</span>
+        {{- end }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      </div>
+      
+      {{- if .Params.description }}
+      <p class="blog-excerpt">{{ .Params.description }}</p>
+      {{- end }}
+      
+      <div class="blog-meta">
+        {{- if .Date }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{- end }}
+        {{- if .Params.tags }}
+        <div class="blog-tags">
+          {{- range .Params.tags }}
+          <span class="tag">{{ . }}</span>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </article>
+  {{- end }}
+  
+  {{- if eq (len .Pages) 0 }}
+  <div class="empty-state">
+    <p>🚀 Próximamente contenido nuevo...</p>
+  </div>
+  {{- end }}
+</div>
+</div>
+
+<style>
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 1.5rem 0;
+  transition: transform 0.2s ease;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-card:hover {
+  transform: translateX(5px);
+}
+
+.blog-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.blog-card h2 {
+  font-size: 1.35rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.blog-card h2 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.blog-excerpt {
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.blog-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.tag::before {
+  content: "#";
+}
+
+.read-more {
+  display: none;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+</style>
+
+{{- end }}

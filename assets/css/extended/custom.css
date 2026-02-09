@@ -1,0 +1,30 @@
+/* Hacer la imagen de perfil circular */
+.profile img {
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+/* Mejorar el espaciado del perfil */
+.profile_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Estilo para los posts en las listas */
+.post-entry {
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejorar el diseño de las secciones de lista */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Talks &amp; Presentations on Israel Jesús</title>
+    <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/</link>
+    <description>Recent content in Talks &amp; Presentations on Israel Jesús</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>us</language>
+    <lastBuildDate>Sun, 20 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes en Producción: Lecciones Aprendidas</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-3/</link>
+      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-3/</guid>
+      <description>Experiencias y mejores prácticas implementando Kubernetes en ambientes productivos</description>
+    </item>
+    <item>
+      <title>DevSecOps: Integrando Seguridad en el Pipeline</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-4/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-4/</guid>
+      <description>Automatización de seguridad desde el desarrollo hasta el despliegue</description>
+    </item>
+    <item>
+      <title>Microservicios con AWS: Arquitectura Moderna</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-5/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-5/</guid>
+      <description>Diseño e implementación de arquitecturas de microservicios escalables</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code con Terraform</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-6/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-6/</guid>
+      <description>Gestión de infraestructura cloud mediante código</description>
+    </item>
+    <item>
+      <title>Observabilidad en Sistemas Distribuidos</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-7/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-7/</guid>
+      <description>Métricas, logs y trazas para sistemas complejos</description>
+    </item>
+    <item>
+      <title>CI/CD: Automatización del Flujo de Desarrollo</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-8/</link>
+      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-8/</guid>
+      <description>Implementación de pipelines de integración y despliegue continuos</description>
+    </item>
+    <item>
+      <title>Redes y Seguridad en la Nube</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-9/</link>
+      <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-9/</guid>
+      <description>Fundamentos de networking y seguridad en entornos cloud</description>
+    </item>
+    <item>
+      <title>Arquitecturas Serverless en AWS</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-2/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-2/</guid>
+      <description>Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.</description>
+    </item>
+    <item>
+      <title>Introducción a Cloud Computing</title>
+      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-1/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-1/</guid>
+      <description>Una charla introductoria sobre los conceptos fundamentales de cloud computing, sus beneficios y casos de uso.</description>
+    </item>
+  </channel>
+</rss>

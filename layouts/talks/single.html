@@ -1,0 +1,101 @@
+{{- define "main" }}
+
+<div class="back-link-top">
+  <a href="/talks" class="back-link">← Volver a Talks</a>
+</div>
+
+<article class="talk-single">
+  <header class="talk-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Params.event }}
+    <p class="talk-event">📍 {{ .Params.event }}</p>
+    {{- end }}
+    {{- if .Date }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">📅 {{ .Date.Format "January 2, 2006" }}</time>
+    {{- end }}
+  </header>
+
+  {{- if .Params.videoId }}
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ .Params.videoId }}" 
+      title="{{ .Title }}"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content talk-description">
+    {{- .Content }}
+  </div>
+  {{- end }}
+</article>
+
+<style>
+.back-link-top {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.talk-single {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.talk-header {
+  margin-bottom: 2rem;
+}
+
+.talk-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.talk-event {
+  color: var(--secondary);
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.talk-header time {
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 12px;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.talk-description {
+  margin: 2rem 0;
+  line-height: 1.8;
+}
+</style>
+
+{{- end }}

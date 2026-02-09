@@ -1,0 +1,198 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Params.description }}
+  <div class="post-description">{{ .Params.description }}</div>
+  {{- end }}
+</header>
+
+<div class="post-content">
+<div class="talks-grid">
+  {{- range .Pages }}
+  <article class="talk-card" data-video="{{ .Params.videoId }}">
+    <a href="{{ .Permalink }}" class="talk-thumbnail">
+      {{- if .Params.videoId }}
+      <img src="https://img.youtube.com/vi/{{ .Params.videoId }}/maxresdefault.jpg" alt="{{ .Title }}" loading="lazy">
+      <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="34">
+          <path fill="#fff" d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+      <div class="video-duration">{{ .Params.duration | default "00:00" }}</div>
+      {{- else }}
+      <div class="no-thumbnail">
+        <span>🎤</span>
+      </div>
+      {{- end }}
+    </a>
+    
+    <div class="talk-info">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div class="talk-meta">
+        {{- if .Params.event }}
+        <p class="talk-event">{{ .Params.event }}</p>
+        {{- end }}
+        {{- if .Date }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{- end }}
+      </div>
+    </div>
+  </article>
+  {{- end }}
+  
+  {{- if eq (len .Pages) 0 }}
+  <div class="empty-state">
+    <p>🎤 Próximamente nuevas charlas y presentaciones...</p>
+  </div>
+  {{- end }}
+</div>
+</div>
+
+<style>
+.talks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .talks-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem 1.25rem;
+  }
+}
+
+.talk-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.talk-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+
+.talk-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.talk-card:hover .talk-thumbnail img {
+  transform: scale(1.05);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 34px;
+  background: rgba(255, 0, 0, 0.9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.play-button svg {
+  width: 48px;
+  height: 34px;
+}
+
+.talk-card:hover .play-button {
+  background: rgba(255, 0, 0, 1);
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.no-thumbnail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: var(--code-bg);
+}
+
+.talk-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.talk-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.talk-info h2 a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.talk-info h2 a:hover {
+  color: var(--secondary);
+}
+
+.talk-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: 0.875rem;
+  color: var(--secondary);
+}
+
+.talk-event {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.talk-info time {
+  display: block;
+  color: var(--secondary);
+  margin: -0.8rem 0 0 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+</style>
+
+{{- end }}

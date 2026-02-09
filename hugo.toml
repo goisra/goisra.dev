@@ -7,81 +7,49 @@ theme = 'PaperMod'
 
   [[menu.main]]
     name = "About"
-    url = "about"
-
-
-  [[menu.main]]
-    name = "Badges"
-    url = "blog"
-
-    [[menu.main.submenu]]
-    name = "AWS_GenAI"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "CCNA"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Santander"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Soporte"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Administracion"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Bits"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Bits"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Sistemas"
-    url = "blog"
-    [[menu.main.submenu]]
-    name = "Google_Aspectos"
-    url = "blog"
-
+    url = "/about"
+    weight = 1
 
   [[menu.main]]
-    name = "Projects"
-    url = "projects"
+    name = "Talks"
+    url = "/talks"
+    weight = 2
 
-    [[menu.main.submenu]]
-      name = "WHEX"
-      url = "projects"
-    [[menu.main.submenu]]
-      name = "ElectricONtrol"
-      url = "projects"
-    [[menu.main.submenu]]
-      name = "ServiceNow_Security"
-      url = "projects"
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 3
 
 
 [permalinks]
   posts = "/:section/:year/:slug"
 
 [params]
-  author = "Isarel Jesús"
+  author = "Israel Jesús"
   defaultTheme = "light"
   displayFullLangName = true
 
   [params.profileMode]
     enabled = true
-    subtitle = "Software Development Engineer"
+    title = "Israel Jesús"
+    subtitle = "Site Reliability Engineer (SRE) @"
+    imageUrl = "/images/pic_redes.jpg"
+    imageWidth = 150
+    imageHeight = 150
 
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/goisra"
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/israel-jesús/"
-  [[params.socialIcons]]
-    name = "gmail"
-    url = "mailto:jesusgarcia2102.job@gmail.com?subject=Desde Web Site:?body=Hola%20Jes%C3%BAs, "
-  [[params.socialIcons]]
-    name = "discord"
-    url = "https://discord.gg/tTUmg96W"
+    url = "https://linkedin.com/in/goisra"
   [[params.socialIcons]]
     name = "instagram"
-    url = "https://www.instagram.com/go_isra?"
+    url = "https://www.instagram.com/goisra.dev"
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@goisra.CloudLab"
+  [[params.socialIcons]]
+    name = "gmail"
+    url = "mailto:contacto@goisra.dev?subject=Desde Web Site:?body=Hola%20Jes%C3%BAs, "
+
