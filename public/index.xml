@@ -2,104 +2,104 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Israel Jesús</title>
-    <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
     <lastBuildDate>Sun, 20 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes en Producción: Lecciones Aprendidas</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-3/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-3/</link>
       <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-3/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-3/</guid>
       <description>Experiencias y mejores prácticas implementando Kubernetes en ambientes productivos</description>
     </item>
     <item>
       <title>DevSecOps: Integrando Seguridad en el Pipeline</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-4/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-4/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-4/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-4/</guid>
       <description>Automatización de seguridad desde el desarrollo hasta el despliegue</description>
     </item>
     <item>
       <title>Microservicios con AWS: Arquitectura Moderna</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-5/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-5/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-5/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-5/</guid>
       <description>Diseño e implementación de arquitecturas de microservicios escalables</description>
     </item>
     <item>
       <title>Infrastructure as Code con Terraform</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-6/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-6/</link>
       <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-6/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-6/</guid>
       <description>Gestión de infraestructura cloud mediante código</description>
     </item>
     <item>
       <title>Observabilidad en Sistemas Distribuidos</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-7/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-7/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-7/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-7/</guid>
       <description>Métricas, logs y trazas para sistemas complejos</description>
     </item>
     <item>
       <title>CI/CD: Automatización del Flujo de Desarrollo</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-8/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-8/</link>
       <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-8/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-8/</guid>
       <description>Implementación de pipelines de integración y despliegue continuos</description>
     </item>
     <item>
       <title>Redes y Seguridad en la Nube</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-9/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-9/</link>
       <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-9/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-9/</guid>
       <description>Fundamentos de networking y seguridad en entornos cloud</description>
     </item>
     <item>
       <title>Arquitecturas Serverless en AWS</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-2/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-2/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-2/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-2/</guid>
       <description>Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 3</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-3/</link>
+      <link>http://localhost:1313/blog/ejemplo-3/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-3/</guid>
+      <guid>http://localhost:1313/blog/ejemplo-3/</guid>
       <description>Tercer ejemplo mostrando diferentes estilos y formatos de contenido.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 2</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-2/</link>
+      <link>http://localhost:1313/blog/ejemplo-2/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-2/</guid>
+      <guid>http://localhost:1313/blog/ejemplo-2/</guid>
       <description>Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</description>
     </item>
     <item>
       <title>Introducción a Cloud Computing</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-1/</link>
+      <link>http://localhost:1313/talks/ejemplo-talk-1/</link>
       <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/talks/ejemplo-talk-1/</guid>
+      <guid>http://localhost:1313/talks/ejemplo-talk-1/</guid>
       <description>Una charla introductoria sobre los conceptos fundamentales de cloud computing, sus beneficios y casos de uso.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 1</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-1/</link>
+      <link>http://localhost:1313/blog/ejemplo-1/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/blog/ejemplo-1/</guid>
+      <guid>http://localhost:1313/blog/ejemplo-1/</guid>
       <description>Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/about/</link>
+      <link>http://localhost:1313/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/about/</guid>
+      <guid>http://localhost:1313/about/about/</guid>
       <description>&lt;p&gt;Hey, there! 👋&lt;/p&gt;
-&lt;p&gt;I am Israel, a Software Development Engineer 👨🏻‍💻☁️&lt;/p&gt;
-&lt;p&gt;🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.&lt;/p&gt;</description>
+&lt;p&gt;I’m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.&lt;/p&gt;
+&lt;p&gt;My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I’ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

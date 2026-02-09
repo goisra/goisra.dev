@@ -12,3 +12,4 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
 Beyond my professional role, I’m the founder and leader of the first AWS User Group in Puebla. I’m committed to growing technology communities, sharing knowledge, and creating spaces where people can learn, collaborate, and innovate together. I’ve participated as a speaker and contributor in international tech communities, reinforcing my belief in technology as a tool for collective impact.
 
 I enjoy tackling complex technical challenges, optimizing cloud infrastructures, and continuously learning to deliver high-quality solutions. My goal is to keep building scalable cloud systems while empowering others through community, mentorship, and knowledge sharing.
+

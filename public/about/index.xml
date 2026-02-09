@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>About on Israel Jesús</title>
-    <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/</link>
-    <description>Recent content in About on Israel Jesús</description>
+    <title>Abouts on Israel Jesús</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
-    <atom:link href="https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/about/</link>
+      <link>http://localhost:1313/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/about/about/</guid>
+      <guid>http://localhost:1313/about/about/</guid>
       <description>&lt;p&gt;Hey, there! 👋&lt;/p&gt;
-&lt;p&gt;I am Israel, a Software Development Engineer 👨🏻‍💻☁️&lt;/p&gt;
-&lt;p&gt;🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.&lt;/p&gt;</description>
+&lt;p&gt;I’m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.&lt;/p&gt;
+&lt;p&gt;My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I’ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
