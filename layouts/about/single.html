@@ -1,14 +1,9 @@
 {{- define "main" }}
 <main class="main">
   <div class="about-content-plain">
-    <header class="page-header">
-      <h1>{{.Title}}</h1>
-      {{- if .Params.subtitle }}
-      <div class="post-meta">{{.Params.subtitle}}</div>
-      {{- end }}
-    </header>
+    <h1>{{.Title}}</h1>
     
-    <div class="post-content">
+    <div class="about-text">
       {{- .Content }}
     </div>
   </div>
@@ -19,18 +14,18 @@
   max-width: var(--main-width);
   margin: 0 auto;
   padding: 0 var(--gap);
-}
-
-.about-content-plain .page-header {
-  margin-bottom: 2rem;
   background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
 }
 
-.about-content-plain .post-content {
+.about-content-plain h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: transparent !important;
+}
+
+.about-text {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -40,28 +35,24 @@
   line-height: 1.8;
 }
 
-.about-content-plain h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.about-content-plain .post-content p {
+.about-text p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: var(--content);
+  background: transparent !important;
 }
 
-/* Eliminar cualquier fondo o borde de contenedores padre */
+/* Eliminar TODOS los fondos y contenedores */
+.about-content-plain *,
 .about-content-plain .post-single,
-.about-content-plain .article,
-.about-content-plain .entry-content {
+.about-content-plain .post-content,
+.about-content-plain .page-header,
+.about-content-plain .entry-content,
+.about-content-plain article {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-  padding: 0 !important;
 }
 </style>
 {{- end }}
