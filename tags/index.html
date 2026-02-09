@@ -77,26 +77,42 @@
 }
 
  
-body[data-theme] .about-content-plain,
-body[data-theme] .about-content-plain *,
-.about-content-plain,
-.about-content-plain * {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-}
-
  
+body .about-content-plain,
 .post-single,
 .post-content,
 .page-header,
 .entry-content,
-article {
+article,
+.main article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+ 
+[href*="/about"] ~ *,
+.main article.post-single {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+}
+
+ 
+* {
+    background: transparent !important;
+}
+
+ 
+body {
+    background: var(--theme) !important;
+}
+
+.header, .nav, .footer {
+    background: var(--theme) !important;
 }
 </style>
 <meta property="og:url" content="https://goisra.dev/tags/">

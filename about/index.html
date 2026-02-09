@@ -77,26 +77,42 @@
 }
 
  
-body[data-theme] .about-content-plain,
-body[data-theme] .about-content-plain *,
-.about-content-plain,
-.about-content-plain * {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-}
-
  
+body .about-content-plain,
 .post-single,
 .post-content,
 .page-header,
 .entry-content,
-article {
+article,
+.main article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+ 
+[href*="/about"] ~ *,
+.main article.post-single {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+}
+
+ 
+* {
+    background: transparent !important;
+}
+
+ 
+body {
+    background: var(--theme) !important;
+}
+
+.header, .nav, .footer {
+    background: var(--theme) !important;
 }
 </style>
 <meta property="og:url" content="https://goisra.dev/about/">
@@ -185,9 +201,9 @@ article {
   </header>
   <div class="entry-content">
     <p>Hey, there! 👋
-I am Israel, a Software Development Engineer 👨🏻‍💻☁️
-🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.
-</p>
+I’m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.
+My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I’ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.
+...</p>
   </div>
   <footer class="entry-footer"><span>Israel Jesús</span></footer>
   <a class="entry-link" aria-label="post link to About" href="https://goisra.dev/about/about/"></a>
