@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Israel Jesús</title>
-    <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
     <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud-Native</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/cloud-native/</link>
+      <link>http://localhost:1313/tags/cloud-native/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/cloud-native/</guid>
+      <guid>http://localhost:1313/tags/cloud-native/</guid>
       <description></description>
     </item>
     <item>
       <title>Containers</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/containers/</link>
+      <link>http://localhost:1313/tags/containers/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/containers/</guid>
+      <guid>http://localhost:1313/tags/containers/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/kubernetes/</link>
+      <link>http://localhost:1313/tags/kubernetes/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/kubernetes/</guid>
+      <guid>http://localhost:1313/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Devops</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/devops/</link>
+      <link>http://localhost:1313/tags/devops/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/devops/</guid>
+      <guid>http://localhost:1313/tags/devops/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/aws/</link>
+      <link>http://localhost:1313/tags/aws/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/aws/</guid>
+      <guid>http://localhost:1313/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/cloud/</link>
+      <link>http://localhost:1313/tags/cloud/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/cloud/</guid>
+      <guid>http://localhost:1313/tags/cloud/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/tutorial/</link>
+      <link>http://localhost:1313/tags/tutorial/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://literate-parakeet-x5rgqjp45xpg3v5q6-1313.app.github.dev/tags/tutorial/</guid>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

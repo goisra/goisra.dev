@@ -92,14 +92,5 @@
       <guid>http://localhost:1313/blog/ejemplo-1/</guid>
       <description>Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</description>
     </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/about/</guid>
-      <description>&lt;p&gt;Hey, there! 👋&lt;/p&gt;
-&lt;p&gt;I’m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.&lt;/p&gt;
-&lt;p&gt;My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I’ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

@@ -1,0 +1,63 @@
+{{- define "main" }}
+<main class="main">
+  <div class="about-content-plain">
+    <h1>{{.Title}}</h1>
+    
+    <div class="about-text">
+      {{- .Content }}
+    </div>
+  </div>
+</main>
+
+<style>
+.about-content-plain {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+  background: transparent !important;
+}
+
+.about-content-plain h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: transparent !important;
+}
+
+.about-text {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  line-height: 1.7;
+  font-size: 1.125rem;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  background: transparent !important;
+}
+
+/* Asegurar que no aparezcan fondos blancos */
+article, .post-single, .post-content, .page-header, .entry-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.main {
+  background: transparent !important;
+}
+
+body .about-content-plain,
+body .about-content-plain *,
+body .about-text,
+body .about-text * {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+</style>
+{{- end }}
