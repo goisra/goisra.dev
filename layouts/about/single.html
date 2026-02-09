@@ -1,0 +1,67 @@
+{{- define "main" }}
+<main class="main">
+  <div class="about-content-plain">
+    <header class="page-header">
+      <h1>{{.Title}}</h1>
+      {{- if .Params.subtitle }}
+      <div class="post-meta">{{.Params.subtitle}}</div>
+      {{- end }}
+    </header>
+    
+    <div class="post-content">
+      {{- .Content }}
+    </div>
+  </div>
+</main>
+
+<style>
+.about-content-plain {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.about-content-plain .page-header {
+  margin-bottom: 2rem;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+.about-content-plain .post-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.8;
+}
+
+.about-content-plain h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.about-content-plain .post-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--content);
+}
+
+/* Eliminar cualquier fondo o borde de contenedores padre */
+.about-content-plain .post-single,
+.about-content-plain .article,
+.about-content-plain .entry-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+</style>
+{{- end }}
