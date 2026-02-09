@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="light">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Blogs | Israel Jesús</title>
+<title>Blog | Israel Jesús</title>
 <meta name="keywords" content="">
-<meta name="description" content="Blogs - Israel Jesús">
-<meta name="author" content="Isarel Jesús">
+<meta name="description" content="Artículos, tutoriales y reflexiones sobre tecnología, cloud computing y desarrollo">
+<meta name="author" content="Israel Jesús">
 <link rel="canonical" href="https://goisra.dev/blog/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3c3ef91a3bed81c525c142086fcac1d12ea65a2ac2ecdfdc6356c9a114be8bfd.css" integrity="sha256-PD75GjvtgcUlwUIIb8rB0S6mWirC7N/cY1bJoRS&#43;i/0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://goisra.dev/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://goisra.dev/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://goisra.dev/favicon-32x32.png">
@@ -18,7 +18,8 @@
 <link rel="mask-icon" href="https://goisra.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://goisra.dev/blog/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://goisra.dev/blog/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://goisra.dev/blog/">
 <noscript>
     <style>
         #theme-toggle,
@@ -27,14 +28,53 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Blogs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://goisra.dev/blog/" />
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blogs"/>
-<meta name="twitter:description" content=""/>
+</script><style>
+ 
+.profile img {
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+ 
+.profile_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+ 
+.post-entry {
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+</style>
+<meta property="og:url" content="https://goisra.dev/blog/">
+  <meta property="og:site_name" content="Israel Jesús">
+  <meta property="og:title" content="Blog">
+  <meta property="og:description" content="Artículos, tutoriales y reflexiones sobre tecnología, cloud computing y desarrollo">
+  <meta property="og:locale" content="us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="Artículos, tutoriales y reflexiones sobre tecnología, cloud computing y desarrollo">
 
 
 <script type="application/ld+json">
@@ -45,28 +85,20 @@
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "Blogs",
+      "name": "Blog",
       "item": "https://goisra.dev/blog/"
     }
   ]
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://goisra.dev/" accesskey="h" title="Israel Jesús (Alt + H)">Israel Jesús</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -95,156 +127,186 @@
                 </a>
             </li>
             <li>
-                <a href="https://goisra.dev/blog" title="Blog">
-                    <span class="active">Blog</span>
+                <a href="https://goisra.dev/talks" title="Talks">
+                    <span>Talks</span>
                 </a>
             </li>
             <li>
-                <a href="https://goisra.dev/projects" title="Projects">
-                    <span>Projects</span>
+                <a href="https://goisra.dev/blog" title="Blog">
+                    <span class="active">Blog</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main"> 
+<main class="main">
+
 <header class="page-header">
-  <h1>
-    Blogs
-  </h1>
+  <h1>Blog</h1>
+  <div class="post-description">Artículos, tutoriales y reflexiones sobre tecnología, cloud computing y desarrollo</div>
 </header>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Administración de sistemas y servicios de infraestructura de TI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/26GSGJNT9W8A</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Administración de sistemas y servicios de infraestructura de TI" href="https://goisra.dev/blog/google_administracion/"></a>
-</article>
+<div class="post-content">
+<div class="blog-grid">
+  <article class="blog-card">
+    <div class="blog-card-content">
+      <div class="blog-card-header">
+        <span class="blog-icon">🎯</span>
+        <h2><a href="https://goisra.dev/blog/ejemplo-3/">Ejemplo de Artículo 3</a></h2>
+      </div>
+      <p class="blog-excerpt">Tercer ejemplo mostrando diferentes estilos y formatos de contenido.</p>
+      
+      <div class="blog-meta">
+        <time datetime="2024-02-05">February 5, 2024</time>
+        <div class="blog-tags">
+          <span class="tag">kubernetes</span>
+          <span class="tag">containers</span>
+          <span class="tag">cloud-native</span>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="blog-card">
+    <div class="blog-card-content">
+      <div class="blog-card-header">
+        <span class="blog-icon">🚀</span>
+        <h2><a href="https://goisra.dev/blog/ejemplo-2/">Ejemplo de Artículo 2</a></h2>
+      </div>
+      <p class="blog-excerpt">Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</p>
+      
+      <div class="blog-meta">
+        <time datetime="2024-02-01">February 1, 2024</time>
+        <div class="blog-tags">
+          <span class="tag">networking</span>
+          <span class="tag">devops</span>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="blog-card">
+    <div class="blog-card-content">
+      <div class="blog-card-header">
+        <span class="blog-icon">☁️</span>
+        <h2><a href="https://goisra.dev/blog/ejemplo-1/">Ejemplo de Artículo 1</a></h2>
+      </div>
+      <p class="blog-excerpt">Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</p>
+      
+      <div class="blog-meta">
+        <time datetime="2024-01-15">January 15, 2024</time>
+        <div class="blog-tags">
+          <span class="tag">cloud</span>
+          <span class="tag">aws</span>
+          <span class="tag">tutorial</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+</div>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Aspectos de la asistencia técnica
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Octubre 2023
-https://www.coursera.org/account/accomplishments/records/GCADH9FAFD2Z</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Aspectos de la asistencia técnica" href="https://goisra.dev/blog/google_aspectos/"></a>
-</article>
+<style>
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">AWS GenAI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Amazon Web Services (AWS)
-Junio 2024
-https://awsgenai.talento-cloud.com/#/my-activities-details?detailType=Certificates
-Amazon Web Services (AWS) lanzó AI Ready, una iniciativa global que ofrecerá formación en habilidades de inteligencia artificial a 2 millones de personas para 2025. Para contribuir con esta iniciativa, el 5 de junio se comenzó la capacitación GenAI más grande de LATAM, en nuestro primer evento “Simplificando la Inteligencia Artificial Generativa con AWS”. Entiende cómo la tecnología de GenAI está impactando tu vida y día a día....</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to AWS GenAI" href="https://goisra.dev/blog/aws_genai/"></a>
-</article>
+.blog-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 1.5rem 0;
+  transition: transform 0.2s ease;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">CCNA: Networks
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Cisco
-Mayo 2024
-https://www.credly.com/badges/97b82a76-3914-4815-a5d2-a9d8ad721c42/linked_in_profile</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to CCNA: Networks" href="https://goisra.dev/blog/ccna/"></a>
-</article>
+.blog-card:hover {
+  transform: translateX(5px);
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Introducción a las Tecnologías Emergentes: Edición 2024
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Santander Open Academy
-Mayo 2024
-https://emtechdigital2024.thinkific.com/certificates/l85oy6a3mz</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Introducción a las Tecnologías Emergentes: Edición 2024" href="https://goisra.dev/blog/santander/"></a>
-</article>
+.blog-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Los bits y bytes de las redes informáticas
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/LNA32PWT454F</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Los bits y bytes de las redes informáticas" href="https://goisra.dev/blog/google_bits/"></a>
-</article>
+.blog-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Programa especializado: Soporte de Tecnologías de la Información de Google
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/specialization/GUGHY2MR8W2R</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Programa especializado: Soporte de Tecnologías de la Información de Google" href="https://goisra.dev/blog/google_soporte/"></a>
-</article>
+.blog-card h2 {
+  font-size: 1.35rem;
+  margin: 0;
+  font-weight: 600;
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Seguridad informática: defensa contra las artes oscuras digitales
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/SE5E8C3SYBDF</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Seguridad informática: defensa contra las artes oscuras digitales" href="https://goisra.dev/blog/google_seguridad/"></a>
-</article>
+.blog-card h2 a {
+  color: var(--primary);
+  text-decoration: none;
+}
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Sistemas operativos y tú: Convertirse en un usuario avanzado
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/ACC5LYFEQZ4U</p>
-  </div>
-  <footer class="entry-footer">Isarel Jesús</footer>
-  <a class="entry-link" aria-label="post link to Sistemas operativos y tú: Convertirse en un usuario avanzado" href="https://goisra.dev/blog/google_sistemas/"></a>
-</article>
+.blog-excerpt {
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.blog-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.tag::before {
+  content: "#";
+}
+
+.read-more {
+  display: none;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+</style>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://goisra.dev/">Israel Jesús</a></span>  
+        <span>&copy; 2026 <a href="https://goisra.dev/">Israel Jesús</a></span> · 
 
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
@@ -253,9 +315,14 @@ https://www.coursera.org/account/accomplishments/records/ACC5LYFEQZ4U</p>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -296,11 +363,12 @@ https://www.coursera.org/account/accomplishments/records/ACC5LYFEQZ4U</p>
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
@@ -309,4 +377,3 @@ https://www.coursera.org/account/accomplishments/records/ACC5LYFEQZ4U</p>
 </body>
 
 </html>
-

@@ -4,126 +4,102 @@
     <title>Israel Jesús</title>
     <link>https://goisra.dev/</link>
     <description>Recent content on Israel Jesús</description>
-    <generator>Hugo -- 0.112.4</generator>
-    <language>en</language>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>us</language>
+    <lastBuildDate>Sun, 20 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://goisra.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes en Producción: Lecciones Aprendidas</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-3/</link>
+      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-3/</guid>
+      <description>Experiencias y mejores prácticas implementando Kubernetes en ambientes productivos</description>
+    </item>
+    <item>
+      <title>DevSecOps: Integrando Seguridad en el Pipeline</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-4/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-4/</guid>
+      <description>Automatización de seguridad desde el desarrollo hasta el despliegue</description>
+    </item>
+    <item>
+      <title>Microservicios con AWS: Arquitectura Moderna</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-5/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-5/</guid>
+      <description>Diseño e implementación de arquitecturas de microservicios escalables</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code con Terraform</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-6/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-6/</guid>
+      <description>Gestión de infraestructura cloud mediante código</description>
+    </item>
+    <item>
+      <title>Observabilidad en Sistemas Distribuidos</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-7/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-7/</guid>
+      <description>Métricas, logs y trazas para sistemas complejos</description>
+    </item>
+    <item>
+      <title>CI/CD: Automatización del Flujo de Desarrollo</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-8/</link>
+      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-8/</guid>
+      <description>Implementación de pipelines de integración y despliegue continuos</description>
+    </item>
+    <item>
+      <title>Redes y Seguridad en la Nube</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-9/</link>
+      <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-9/</guid>
+      <description>Fundamentos de networking y seguridad en entornos cloud</description>
+    </item>
+    <item>
+      <title>Arquitecturas Serverless en AWS</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-2/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-2/</guid>
+      <description>Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.</description>
+    </item>
+    <item>
+      <title>Ejemplo de Artículo 3</title>
+      <link>https://goisra.dev/blog/ejemplo-3/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/blog/ejemplo-3/</guid>
+      <description>Tercer ejemplo mostrando diferentes estilos y formatos de contenido.</description>
+    </item>
+    <item>
+      <title>Ejemplo de Artículo 2</title>
+      <link>https://goisra.dev/blog/ejemplo-2/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/blog/ejemplo-2/</guid>
+      <description>Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</description>
+    </item>
+    <item>
+      <title>Introducción a Cloud Computing</title>
+      <link>https://goisra.dev/talks/ejemplo-talk-1/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/talks/ejemplo-talk-1/</guid>
+      <description>Una charla introductoria sobre los conceptos fundamentales de cloud computing, sus beneficios y casos de uso.</description>
+    </item>
+    <item>
+      <title>Ejemplo de Artículo 1</title>
+      <link>https://goisra.dev/blog/ejemplo-1/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/blog/ejemplo-1/</guid>
+      <description>Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://goisra.dev/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://goisra.dev/about/about/</guid>
-      <description>Hey, there! 👋
-I am Israel, a Software Development Engineer 👨🏻‍💻☁️
-🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.</description>
-    </item>
-    <item>
-      <title>Administración de sistemas y servicios de infraestructura de TI</title>
-      <link>https://goisra.dev/blog/google_administracion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_administracion/</guid>
-      <description>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/26GSGJNT9W8A</description>
-    </item>
-    <item>
-      <title>Aspectos de la asistencia técnica</title>
-      <link>https://goisra.dev/blog/google_aspectos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_aspectos/</guid>
-      <description>Google
-Octubre 2023
-https://www.coursera.org/account/accomplishments/records/GCADH9FAFD2Z</description>
-    </item>
-    <item>
-      <title>AWS GenAI</title>
-      <link>https://goisra.dev/blog/aws_genai/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/aws_genai/</guid>
-      <description>Amazon Web Services (AWS)
-Junio 2024
-https://awsgenai.talento-cloud.com/#/my-activities-details?detailType=Certificates
-Amazon Web Services (AWS) lanzó AI Ready, una iniciativa global que ofrecerá formación en habilidades de inteligencia artificial a 2 millones de personas para 2025. Para contribuir con esta iniciativa, el 5 de junio se comenzó la capacitación GenAI más grande de LATAM, en nuestro primer evento “Simplificando la Inteligencia Artificial Generativa con AWS”. Entiende cómo la tecnología de GenAI está impactando tu vida y día a día.</description>
-    </item>
-    <item>
-      <title>CCNA: Networks</title>
-      <link>https://goisra.dev/blog/ccna/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/ccna/</guid>
-      <description>Cisco
-Mayo 2024
-https://www.credly.com/badges/97b82a76-3914-4815-a5d2-a9d8ad721c42/linked_in_profile</description>
-    </item>
-    <item>
-      <title>Inclusive Education Platform for People with Disabilities integrated with AI</title>
-      <link>https://goisra.dev/projects/whex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/projects/whex/</guid>
-      <description>Junio, 2024
-https://goisra.github.io/WHEX/
-A platform dedicated to empowering people about the inclusion and appropriate treatment of people with disabilities. Through educational resources, workshops and interactive programmes, we aim to foster a more inclusive and respectful society, where all people, with and without disabilities, are valued and treated with dignity. Our mission is to provide the necessary tools to remove barriers and promote equality, ensuring that all people have the opportunity to participate fully in all aspects of community life.</description>
-    </item>
-    <item>
-      <title>Intelligent Energy Management for Federal Electricity Commission (CFE)</title>
-      <link>https://goisra.dev/projects/electricontrol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/projects/electricontrol/</guid>
-      <description>Abril, 2024
-https://devpost.com/2311082152
-Application focused on reducing energy consumption in critical peaks. Optimize the distribution of available energy. Inform and educate users about the efficient use of energy.</description>
-    </item>
-    <item>
-      <title>Introducción a las Tecnologías Emergentes: Edición 2024</title>
-      <link>https://goisra.dev/blog/santander/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/santander/</guid>
-      <description>Santander Open Academy
-Mayo 2024
-https://emtechdigital2024.thinkific.com/certificates/l85oy6a3mz</description>
-    </item>
-    <item>
-      <title>Los bits y bytes de las redes informáticas</title>
-      <link>https://goisra.dev/blog/google_bits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_bits/</guid>
-      <description>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/LNA32PWT454F</description>
-    </item>
-    <item>
-      <title>Programa especializado: Soporte de Tecnologías de la Información de Google</title>
-      <link>https://goisra.dev/blog/google_soporte/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_soporte/</guid>
-      <description>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/specialization/GUGHY2MR8W2R</description>
-    </item>
-    <item>
-      <title>Security Incident Management System Development (SGIS) for Converge Technology Solutions</title>
-      <link>https://goisra.dev/projects/servicenow_security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/projects/servicenow_security/</guid>
-      <description>Mayo, 2024
-https://convergetp.com/
-Develop a system capable of storing information and notifying a person or organization about a security incident that addresses all phases of security incident management, from initial detection to recovery and post-incident analysis. The ISMS must be adaptable to the specific needs of a wide range of organizations, from small businesses to large corporations.</description>
-    </item>
-    <item>
-      <title>Seguridad informática: defensa contra las artes oscuras digitales</title>
-      <link>https://goisra.dev/blog/google_seguridad/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_seguridad/</guid>
-      <description>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/SE5E8C3SYBDF</description>
-    </item>
-    <item>
-      <title>Sistemas operativos y tú: Convertirse en un usuario avanzado</title>
-      <link>https://goisra.dev/blog/google_sistemas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/google_sistemas/</guid>
-      <description>Google
-Noviembre 2023
-https://www.coursera.org/account/accomplishments/records/ACC5LYFEQZ4U</description>
+      <description>&lt;p&gt;Hey, there! 👋&lt;/p&gt;
+&lt;p&gt;I am Israel, a Software Development Engineer 👨🏻‍💻☁️&lt;/p&gt;
+&lt;p&gt;🔭 I’m currently a member of MLSA || Microsoft Learn Ambassadors.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
