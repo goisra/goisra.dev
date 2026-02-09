@@ -40,26 +40,42 @@
     margin: 0 auto;
 }
 
-/* Estilos específicos para páginas About - layout completamente plano */
-body[data-theme] .about-content-plain,
-body[data-theme] .about-content-plain *,
-.about-content-plain,
-.about-content-plain * {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-}
-
-/* Eliminar CUALQUIER fondo en páginas About */
+/* Estilos específicos para TODAS las páginas About - diseño completamente plano */
+/* Aplicar a /about/ y /about/about/ */
+body .about-content-plain,
 .post-single,
 .post-content,
 .page-header,
 .entry-content,
-article {
+article,
+.main article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+/* Forzar que TODAS las páginas about sean planas */
+[href*="/about"] ~ *,
+.main article.post-single {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+}
+
+/* Override específico para asegurar que no aparezcan fondos */
+* {
+    background: transparent !important;
+}
+
+/* Restaurar fondo solo para body y elementos necesarios */
+body {
+    background: var(--theme) !important;
+}
+
+.header, .nav, .footer {
+    background: var(--theme) !important;
 }
 </style>
