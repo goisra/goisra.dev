@@ -3,6 +3,11 @@ languageCode = 'us'
 title = 'Israel Jesús'
 theme = 'PaperMod'
 
+[imaging]
+  quality = 100
+  resampleFilter = "lanczos"
+  anchor = "smart"
+
 [menu]
 
   [[menu.main]]
