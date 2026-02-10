@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog on Israel Jesús</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://goisra.dev/blog/</link>
     <description>Recent content in Blog on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
     <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://goisra.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ejemplo de Artículo 3</title>
-      <link>http://localhost:1313/blog/ejemplo-3/</link>
+      <link>https://goisra.dev/blog/ejemplo-3/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/ejemplo-3/</guid>
+      <guid>https://goisra.dev/blog/ejemplo-3/</guid>
       <description>Tercer ejemplo mostrando diferentes estilos y formatos de contenido.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 2</title>
-      <link>http://localhost:1313/blog/ejemplo-2/</link>
+      <link>https://goisra.dev/blog/ejemplo-2/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/ejemplo-2/</guid>
+      <guid>https://goisra.dev/blog/ejemplo-2/</guid>
       <description>Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 1</title>
-      <link>http://localhost:1313/blog/ejemplo-1/</link>
+      <link>https://goisra.dev/blog/ejemplo-1/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/ejemplo-1/</guid>
+      <guid>https://goisra.dev/blog/ejemplo-1/</guid>
       <description>Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</description>
     </item>
   </channel>

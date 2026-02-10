@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="light">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Gestionando buckets de S3: Crear, listar y eliminar con Boto3 | Israel Jesús</title>
 <meta name="keywords" content="">
 <meta name="description" content="Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.">
 <meta name="author" content="Israel Jesús">
-<link rel="canonical" href="http://localhost:1313/talks/gestionando-buckets-s3-boto3/">
+<link rel="canonical" href="https://goisra.dev/talks/gestionando-buckets-s3-boto3/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3c3ef91a3bed81c525c142086fcac1d12ea65a2ac2ecdfdc6356c9a114be8bfd.css" integrity="sha256-PD75GjvtgcUlwUIIb8rB0S6mWirC7N/cY1bJoRS&#43;i/0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://goisra.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://goisra.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://goisra.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://goisra.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://goisra.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/talks/gestionando-buckets-s3-boto3/">
+<link rel="alternate" hreflang="en" href="https://goisra.dev/talks/gestionando-buckets-s3-boto3/">
 <noscript>
     <style>
         #theme-toggle,
@@ -170,13 +170,79 @@ body {
     background: var(--theme) !important;
 }
 </style>
+<meta property="og:url" content="https://goisra.dev/talks/gestionando-buckets-s3-boto3/">
+  <meta property="og:site_name" content="Israel Jesús">
+  <meta property="og:title" content="Gestionando buckets de S3: Crear, listar y eliminar con Boto3">
+  <meta property="og:description" content="Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.">
+  <meta property="og:locale" content="us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="talks">
+    <meta property="article:published_time" content="2025-08-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-13T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gestionando buckets de S3: Crear, listar y eliminar con Boto3">
+<meta name="twitter:description" content="Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.">
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Talks \u0026 Presentations",
+      "item": "https://goisra.dev/talks/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Gestionando buckets de S3: Crear, listar y eliminar con Boto3",
+      "item": "https://goisra.dev/talks/gestionando-buckets-s3-boto3/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Gestionando buckets de S3: Crear, listar y eliminar con Boto3",
+  "name": "Gestionando buckets de S3: Crear, listar y eliminar con Boto3",
+  "description": "Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Descripción del tutorial En este tutorial práctico cubrimos las operaciones esenciales para la gestión completa de buckets en Amazon S3 usando Python y Boto3.\n¿Qué aprenderás? Crear buckets: Inicializar contenedores de almacenamiento en S3 Listar buckets: Visualizar todos los buckets de tu cuenta Eliminar buckets: Remover buckets de forma segura Verificar existencia: Comprobar si un bucket existe Manejo de excepciones: Gestionar errores comunes Automatización: Scripts para operaciones repetitivas Aplicaciones prácticas Este contenido es fundamental para cualquier desarrollador que trabaje con AWS, proporcionando las bases para automatizar la gestión de almacenamiento en la nube con Python.\n",
+  "wordCount" : "95",
+  "inLanguage": "en",
+  "datePublished": "2025-08-13T00:00:00Z",
+  "dateModified": "2025-08-13T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Israel Jesús"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://goisra.dev/talks/gestionando-buckets-s3-boto3/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Israel Jesús",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://goisra.dev/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Israel Jesús (Alt + H)">Israel Jesús</a>
+            <a href="https://goisra.dev/" accesskey="h" title="Israel Jesús (Alt + H)">Israel Jesús</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -202,17 +268,17 @@ body {
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about" title="About">
+                <a href="https://goisra.dev/about" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/talks" title="Talks">
+                <a href="https://goisra.dev/talks" title="Talks">
                     <span>Talks</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog" title="Blog">
+                <a href="https://goisra.dev/blog" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
@@ -228,8 +294,8 @@ body {
 <article class="talk-single">
   <header class="talk-header">
     <h1>Gestionando buckets de S3: Crear, listar y eliminar con Boto3</h1>
-    <p class="talk-event">📍 Online Resource</p>
-    <time datetime="2025-08-13">📅 August 13, 2025</time>
+    <p class="talk-event">Online Resource</p>
+    <time datetime="2025-08-13">August 13, 2025</time>
   </header>
   <div class="video-container">
     <iframe 
@@ -260,6 +326,9 @@ body {
 <style>
 .back-link-top {
   margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .back-link {
@@ -283,12 +352,12 @@ body {
 }
 
 .talk-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .talk-event {
   color: var(--secondary);
-  margin: 0.5rem 0;
+  margin: 0 0 0.25rem 0;
   font-size: 1.1rem;
 }
 
@@ -323,7 +392,7 @@ body {
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Israel Jesús</a></span> · 
+        <span>&copy; 2026 <a href="https://goisra.dev/">Israel Jesús</a></span> · 
 
     <span>
         Powered by

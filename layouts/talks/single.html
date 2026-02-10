@@ -8,10 +8,10 @@
   <header class="talk-header">
     <h1>{{ .Title }}</h1>
     {{- if .Params.event }}
-    <p class="talk-event">📍 {{ .Params.event }}</p>
+    <p class="talk-event">{{ .Params.event }}</p>
     {{- end }}
     {{- if .Date }}
-    <time datetime="{{ .Date.Format "2006-01-02" }}">📅 {{ .Date.Format "January 2, 2006" }}</time>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
     {{- end }}
   </header>
 
@@ -37,6 +37,9 @@
 <style>
 .back-link-top {
   margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .back-link {
@@ -60,12 +63,12 @@
 }
 
 .talk-header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .talk-event {
   color: var(--secondary);
-  margin: 0.5rem 0;
+  margin: 0 0 0.25rem 0;
   font-size: 1.1rem;
 }
 

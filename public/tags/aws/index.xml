@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Aws on Israel Jesús</title>
-    <link>http://localhost:1313/tags/aws/</link>
+    <link>https://goisra.dev/tags/aws/</link>
     <description>Recent content in Aws on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
     <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://goisra.dev/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ejemplo de Artículo 1</title>
-      <link>http://localhost:1313/blog/ejemplo-1/</link>
+      <link>https://goisra.dev/blog/ejemplo-1/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/ejemplo-1/</guid>
+      <guid>https://goisra.dev/blog/ejemplo-1/</guid>
       <description>Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</description>
     </item>
   </channel>

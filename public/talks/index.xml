@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Talks &amp; Presentations on Israel Jesús</title>
-    <link>http://localhost:1313/talks/</link>
+    <link>https://goisra.dev/talks/</link>
     <description>Recent content in Talks &amp; Presentations on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
     <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/talks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://goisra.dev/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IA sin complicaciones: Integrando AWS AI Services en tus proyectos</title>
-      <link>http://localhost:1313/talks/ia-aws-ai-services/</link>
+      <link>https://goisra.dev/talks/ia-aws-ai-services/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ia-aws-ai-services/</guid>
+      <guid>https://goisra.dev/talks/ia-aws-ai-services/</guid>
       <description>Exploramos cómo integrar de manera sencilla y práctica los servicios de IA de AWS en tus proyectos para potenciar tus aplicaciones con análisis inteligente y automatización avanzada.</description>
     </item>
     <item>
       <title>Thinking Cloud: La mentalidad detrás del Cloud Practitioner</title>
-      <link>http://localhost:1313/talks/thinking-cloud-practitioner/</link>
+      <link>https://goisra.dev/talks/thinking-cloud-practitioner/</link>
       <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/thinking-cloud-practitioner/</guid>
+      <guid>https://goisra.dev/talks/thinking-cloud-practitioner/</guid>
       <description>Aprender AWS es más que conocer servicios: es adoptar la mentalidad que impulsa la innovación en la nube.</description>
     </item>
     <item>
       <title>AWS Lambda: Menos estrés, más serverLESS</title>
-      <link>http://localhost:1313/talks/aws-lambda-serverless-itp/</link>
+      <link>https://goisra.dev/talks/aws-lambda-serverless-itp/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/aws-lambda-serverless-itp/</guid>
+      <guid>https://goisra.dev/talks/aws-lambda-serverless-itp/</guid>
       <description>AWS Lambda es uno de los pilares del enfoque serverless en AWS. Aprende cómo funciona, cuándo usarlo y cómo integrarlo con otros servicios.</description>
     </item>
     <item>
       <title>Construyendo Legos con AWS</title>
-      <link>http://localhost:1313/talks/construyendo-legos-aws/</link>
+      <link>https://goisra.dev/talks/construyendo-legos-aws/</link>
       <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/construyendo-legos-aws/</guid>
+      <guid>https://goisra.dev/talks/construyendo-legos-aws/</guid>
       <description>AWS nos ofrece bloques tecnológicos listos para ensamblar y crear soluciones en la nube.</description>
     </item>
     <item>
       <title>Trabajando con archivos en S3: Upload, download y gestión con Python</title>
-      <link>http://localhost:1313/talks/trabajando-archivos-s3-python/</link>
+      <link>https://goisra.dev/talks/trabajando-archivos-s3-python/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/trabajando-archivos-s3-python/</guid>
+      <guid>https://goisra.dev/talks/trabajando-archivos-s3-python/</guid>
       <description>Aprende a interactuar con Amazon S3 usando Python y Boto3 para subir, descargar y gestionar archivos en la nube.</description>
     </item>
     <item>
       <title>AWS S3 con Python: Creando y gestionando buckets con Boto3</title>
-      <link>http://localhost:1313/talks/aws-s3-python-boto3/</link>
+      <link>https://goisra.dev/talks/aws-s3-python-boto3/</link>
       <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/aws-s3-python-boto3/</guid>
+      <guid>https://goisra.dev/talks/aws-s3-python-boto3/</guid>
       <description>Domina la creación y gestión de buckets de Amazon S3 utilizando Python y Boto3 para almacenamiento escalable en la nube.</description>
     </item>
     <item>
       <title>Gestionando buckets de S3: Crear, listar y eliminar con Boto3</title>
-      <link>http://localhost:1313/talks/gestionando-buckets-s3-boto3/</link>
+      <link>https://goisra.dev/talks/gestionando-buckets-s3-boto3/</link>
       <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/gestionando-buckets-s3-boto3/</guid>
+      <guid>https://goisra.dev/talks/gestionando-buckets-s3-boto3/</guid>
       <description>Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.</description>
     </item>
     <item>
       <title>Introducción a AWS y Boto3: Creando tu primer usuario IAM</title>
-      <link>http://localhost:1313/talks/introduccion-aws-boto3-iam/</link>
+      <link>https://goisra.dev/talks/introduccion-aws-boto3-iam/</link>
       <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/introduccion-aws-boto3-iam/</guid>
+      <guid>https://goisra.dev/talks/introduccion-aws-boto3-iam/</guid>
       <description>Aprende a automatizar la gestión de identidades en AWS usando Python y Boto3 para crear y configurar usuarios IAM.</description>
     </item>
     <item>
       <title>Serverless: Un Caso Práctico</title>
-      <link>http://localhost:1313/talks/serverless-caso-practico/</link>
+      <link>https://goisra.dev/talks/serverless-caso-practico/</link>
       <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/serverless-caso-practico/</guid>
+      <guid>https://goisra.dev/talks/serverless-caso-practico/</guid>
       <description>Experiencia real implementando arquitecturas Serverless en AWS, desde el diseño hasta la producción.</description>
     </item>
     <item>
       <title>AWS Lambda: Menos estrés, más ServerLESS</title>
-      <link>http://localhost:1313/talks/aws-lambda-serverless-online/</link>
+      <link>https://goisra.dev/talks/aws-lambda-serverless-online/</link>
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/aws-lambda-serverless-online/</guid>
+      <guid>https://goisra.dev/talks/aws-lambda-serverless-online/</guid>
       <description>Webinar internacional sobre cómo AWS Lambda puede transformar el desarrollo de aplicaciones en la nube, simplificando procesos y mejorando la eficiencia.</description>
     </item>
   </channel>
