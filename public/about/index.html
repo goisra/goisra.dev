@@ -79,6 +79,53 @@ My experience spans cloud architecture, serverless and event-driven systems, Inf
 }
 
  
+
+ 
+.talks-section,
+.blog-section,
+.talks-list,
+.blog-list,
+.talks-grid,
+.blog-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    box-sizing: border-box;
+}
+
+ 
+body[data-section="talks"] .main,
+body[data-section="blog"] .main,
+.talks-content,
+.blog-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+ 
+body[data-section="talks"] .post-content,
+body[data-section="blog"] .post-content,
+.talks-content .post-content,
+.blog-content .post-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap) !important;
+}
+
+ 
+.talks-section .page-header,
+.blog-section .page-header,
+body[data-section="talks"] .page-header,
+body[data-section="blog"] .page-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+ 
+
+ 
  
 body .about-content-plain,
 .post-single,
@@ -92,6 +139,15 @@ article,
     box-shadow: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
+}
+
+ 
+.entry-content p,
+.post-content p {
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
 }
 
  
@@ -166,20 +222,72 @@ body {
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header">
-  <h1>
-    About
-  </h1>
-</header>
-<div class="post-content"><p>Hey, there! 👋</p>
+<main class="main">
+<main class="main">
+  <div class="about-content-plain">
+    <h1>About</h1>
+    
+    <div class="about-text"><p>Hey, there! 👋</p>
 <p>I&rsquo;m Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.</p>
 <p>My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I&rsquo;ve led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.</p>
 <p>Beyond my professional role, I&rsquo;m the founder and leader of the first AWS User Group in Puebla. I&rsquo;m committed to growing technology communities, sharing knowledge, and creating spaces where people can learn, collaborate, and innovate together. I&rsquo;ve participated as a speaker and contributor in international tech communities, reinforcing my belief in technology as a tool for collective impact.</p>
 <p>I enjoy tackling complex technical challenges, optimizing cloud infrastructures, and continuously learning to deliver high-quality solutions. My goal is to keep building scalable cloud systems while empowering others through community, mentorship, and knowledge sharing.</p>
 
+    </div>
+  </div>
+</main>
 
-</div>
+<style>
+.about-content-plain {
+  max-width: var(--main-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+  background: transparent !important;
+}
+
+.about-content-plain h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: transparent !important;
+}
+
+.about-text {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  line-height: 1.7;
+  font-size: 1.125rem;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  background: transparent !important;
+}
+
+ 
+article, .post-single, .post-content, .page-header, .entry-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.main {
+  background: transparent !important;
+}
+
+body .about-content-plain,
+body .about-content-plain *,
+body .about-text,
+body .about-text * {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+</style>
     </main>
     
 <footer class="footer">

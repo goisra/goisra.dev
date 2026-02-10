@@ -6,63 +6,77 @@
     <description>Recent content on Israel Jesús</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>us</language>
-    <lastBuildDate>Sun, 20 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kubernetes en Producción: Lecciones Aprendidas</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-3/</link>
-      <pubDate>Sun, 20 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-3/</guid>
-      <description>Experiencias y mejores prácticas implementando Kubernetes en ambientes productivos</description>
+      <title>IA sin complicaciones: Integrando AWS AI Services en tus proyectos</title>
+      <link>http://localhost:1313/talks/ia-aws-ai-services/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/ia-aws-ai-services/</guid>
+      <description>Exploramos cómo integrar de manera sencilla y práctica los servicios de IA de AWS en tus proyectos para potenciar tus aplicaciones con análisis inteligente y automatización avanzada.</description>
     </item>
     <item>
-      <title>DevSecOps: Integrando Seguridad en el Pipeline</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-4/</link>
-      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-4/</guid>
-      <description>Automatización de seguridad desde el desarrollo hasta el despliegue</description>
+      <title>Thinking Cloud: La mentalidad detrás del Cloud Practitioner</title>
+      <link>http://localhost:1313/talks/thinking-cloud-practitioner/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/thinking-cloud-practitioner/</guid>
+      <description>Aprender AWS es más que conocer servicios: es adoptar la mentalidad que impulsa la innovación en la nube.</description>
     </item>
     <item>
-      <title>Microservicios con AWS: Arquitectura Moderna</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-5/</link>
-      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-5/</guid>
-      <description>Diseño e implementación de arquitecturas de microservicios escalables</description>
+      <title>AWS Lambda: Menos estrés, más serverLESS</title>
+      <link>http://localhost:1313/talks/aws-lambda-serverless-itp/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/aws-lambda-serverless-itp/</guid>
+      <description>AWS Lambda es uno de los pilares del enfoque serverless en AWS. Aprende cómo funciona, cuándo usarlo y cómo integrarlo con otros servicios.</description>
     </item>
     <item>
-      <title>Infrastructure as Code con Terraform</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-6/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-6/</guid>
-      <description>Gestión de infraestructura cloud mediante código</description>
+      <title>Construyendo Legos con AWS</title>
+      <link>http://localhost:1313/talks/construyendo-legos-aws/</link>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/construyendo-legos-aws/</guid>
+      <description>AWS nos ofrece bloques tecnológicos listos para ensamblar y crear soluciones en la nube.</description>
     </item>
     <item>
-      <title>Observabilidad en Sistemas Distribuidos</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-7/</link>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-7/</guid>
-      <description>Métricas, logs y trazas para sistemas complejos</description>
+      <title>Trabajando con archivos en S3: Upload, download y gestión con Python</title>
+      <link>http://localhost:1313/talks/trabajando-archivos-s3-python/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/trabajando-archivos-s3-python/</guid>
+      <description>Aprende a interactuar con Amazon S3 usando Python y Boto3 para subir, descargar y gestionar archivos en la nube.</description>
     </item>
     <item>
-      <title>CI/CD: Automatización del Flujo de Desarrollo</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-8/</link>
-      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-8/</guid>
-      <description>Implementación de pipelines de integración y despliegue continuos</description>
+      <title>AWS S3 con Python: Creando y gestionando buckets con Boto3</title>
+      <link>http://localhost:1313/talks/aws-s3-python-boto3/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/aws-s3-python-boto3/</guid>
+      <description>Domina la creación y gestión de buckets de Amazon S3 utilizando Python y Boto3 para almacenamiento escalable en la nube.</description>
     </item>
     <item>
-      <title>Redes y Seguridad en la Nube</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-9/</link>
-      <pubDate>Mon, 08 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-9/</guid>
-      <description>Fundamentos de networking y seguridad en entornos cloud</description>
+      <title>Gestionando buckets de S3: Crear, listar y eliminar con Boto3</title>
+      <link>http://localhost:1313/talks/gestionando-buckets-s3-boto3/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/gestionando-buckets-s3-boto3/</guid>
+      <description>Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación.</description>
     </item>
     <item>
-      <title>Arquitecturas Serverless en AWS</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-2/</link>
-      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-2/</guid>
-      <description>Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.</description>
+      <title>Introducción a AWS y Boto3: Creando tu primer usuario IAM</title>
+      <link>http://localhost:1313/talks/introduccion-aws-boto3-iam/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/introduccion-aws-boto3-iam/</guid>
+      <description>Aprende a automatizar la gestión de identidades en AWS usando Python y Boto3 para crear y configurar usuarios IAM.</description>
+    </item>
+    <item>
+      <title>Serverless: Un Caso Práctico</title>
+      <link>http://localhost:1313/talks/serverless-caso-practico/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/serverless-caso-practico/</guid>
+      <description>Experiencia real implementando arquitecturas Serverless en AWS, desde el diseño hasta la producción.</description>
+    </item>
+    <item>
+      <title>AWS Lambda: Menos estrés, más ServerLESS</title>
+      <link>http://localhost:1313/talks/aws-lambda-serverless-online/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/aws-lambda-serverless-online/</guid>
+      <description>Webinar internacional sobre cómo AWS Lambda puede transformar el desarrollo de aplicaciones en la nube, simplificando procesos y mejorando la eficiencia.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 3</title>
@@ -77,13 +91,6 @@
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/ejemplo-2/</guid>
       <description>Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</description>
-    </item>
-    <item>
-      <title>Introducción a Cloud Computing</title>
-      <link>http://localhost:1313/talks/ejemplo-talk-1/</link>
-      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talks/ejemplo-talk-1/</guid>
-      <description>Una charla introductoria sobre los conceptos fundamentales de cloud computing, sus beneficios y casos de uso.</description>
     </item>
     <item>
       <title>Ejemplo de Artículo 1</title>

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | Israel Jesús</title>
+<title>Trabajando con archivos en S3: Upload, download y gestión con Python | Israel Jesús</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="Aprende a interactuar con Amazon S3 usando Python y Boto3 para subir, descargar y gestionar archivos en la nube.">
 <meta name="author" content="Israel Jesús">
-<link rel="canonical" href="http://localhost:1313/categories/">
+<link rel="canonical" href="http://localhost:1313/talks/trabajando-archivos-s3-python/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3c3ef91a3bed81c525c142086fcac1d12ea65a2ac2ecdfdc6356c9a114be8bfd.css" integrity="sha256-PD75GjvtgcUlwUIIb8rB0S6mWirC7N/cY1bJoRS&#43;i/0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/categories/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/talks/trabajando-archivos-s3-python/">
 <noscript>
     <style>
         #theme-toggle,
@@ -173,7 +172,7 @@ body {
 </style>
 
 </head>
-<body class="list" id="top">
+<body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
@@ -221,12 +220,106 @@ body {
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
 
-<ul class="terms-tags">
+<div class="back-link-top">
+  <a href="/talks" class="back-link">← Volver a Talks</a>
+</div>
+
+<article class="talk-single">
+  <header class="talk-header">
+    <h1>Trabajando con archivos en S3: Upload, download y gestión con Python</h1>
+    <p class="talk-event">📍 Online Resource</p>
+    <time datetime="2025-08-14">📅 August 14, 2025</time>
+  </header>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/8gf-jffJZh0" 
+      title="Trabajando con archivos en S3: Upload, download y gestión con Python"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
+<p>En este tutorial práctico exploramos cómo trabajar con archivos en Amazon S3 utilizando Python y el SDK Boto3.</p>
+<h3 id="qué-aprenderás">¿Qué aprenderás?</h3>
+<ul>
+<li><strong>Upload de archivos</strong>: Subir archivos a buckets de S3 desde Python</li>
+<li><strong>Download de archivos</strong>: Descargar objetos almacenados en S3</li>
+<li><strong>Gestión de objetos</strong>: Listar, copiar y mover archivos</li>
+<li><strong>Metadatos</strong>: Trabajar con propiedades de los objetos</li>
+<li><strong>Manejo de errores</strong>: Implementar controles de error robustos</li>
+<li><strong>Optimización</strong>: Técnicas para transferencias eficientes</li>
 </ul>
+<h3 id="casos-de-uso">Casos de uso</h3>
+<p>Ideal para desarrolladores que necesitan integrar almacenamiento en la nube en sus aplicaciones Python, desde backups automatizados hasta sistemas de gestión de archivos.</p>
+
+  </div>
+</article>
+
+<style>
+.back-link-top {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.talk-single {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.talk-header {
+  margin-bottom: 2rem;
+}
+
+.talk-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.talk-event {
+  color: var(--secondary);
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.talk-header time {
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;  
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-radius: 12px;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.talk-description {
+  margin: 2rem 0;
+  line-height: 1.8;
+}
+</style>
     </main>
     
 <footer class="footer">
