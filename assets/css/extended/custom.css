@@ -12,19 +12,17 @@
     gap: 1rem;
 }
 
-/* Estilo para los posts en las listas */
-.post-entry {
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
+/* Estilo para enlaces inline en el contenido */
+.content a {
+    color: inherit;
+    border-bottom: 2px solid var(--primary);
+    text-decoration: none;
+    transition: border-color 0.2s ease;
 }
 
-.post-entry:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.content a:hover {
+    border-bottom-color: var(--secondary);
 }
 
-/* Mejorar el diseño de las secciones de lista */
-.main {
-    max-width: 1200px;
     margin: 0 auto;
 }
