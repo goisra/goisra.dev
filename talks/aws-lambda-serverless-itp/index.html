@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>AWS Lambda: Menos estrés, más serverLESS</h1>
-    <p class="talk-event">Jornada Internacional de TICs y Software Libre</p>
-    <time datetime="2025-09-20">September 20, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/sIHvoe33DH4" 
-      title="AWS Lambda: Menos estrés, más serverLESS"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>AWS Lambda: Menos estrés, más serverLESS</h1>
+      <p class="talk-event">Jornada Internacional de TICs y Software Libre</p>
+      <time datetime="2025-09-20">September 20, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/sIHvoe33DH4" 
+        title="AWS Lambda: Menos estrés, más serverLESS"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
 <p>AWS Lambda: Menos estrés, más serverLESS fue una plática que impartí en el Instituto Tecnológico de Puebla (ITP) durante el marco de las Jornadas Internacionales de TICs y Software Libre el 20 de Septiembre de 2025.</p>
 <p>AWS Lambda es uno de los pilares del enfoque serverless en AWS. En esta plática vimos cómo funciona, cuándo usarlo y cómo integrarlo con otros servicios de AWS para construir arquitecturas event-driven, reducir costos y simplificar la operación.</p>
 <h3 id="temas-cubiertos">Temas cubiertos</h3>
@@ -319,17 +320,19 @@ body {
 </ul>
 <p>Todo con ejemplos reales y buenas prácticas para llevarlo a producción sin estrés.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -344,10 +347,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

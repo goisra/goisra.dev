@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>Trabajando con archivos en S3: Upload, download y gestión con Python</h1>
-    <p class="talk-event">Online Resource</p>
-    <time datetime="2025-08-14">August 14, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/8gf-jffJZh0" 
-      title="Trabajando con archivos en S3: Upload, download y gestión con Python"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>Trabajando con archivos en S3: Upload, download y gestión con Python</h1>
+      <p class="talk-event">Online Resource</p>
+      <time datetime="2025-08-14">August 14, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/8gf-jffJZh0" 
+        title="Trabajando con archivos en S3: Upload, download y gestión con Python"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
 <p>En este tutorial práctico exploramos cómo trabajar con archivos en Amazon S3 utilizando Python y el SDK Boto3.</p>
 <h3 id="qué-aprenderás">¿Qué aprenderás?</h3>
 <ul>
@@ -320,17 +321,19 @@ body {
 <h3 id="casos-de-uso">Casos de uso</h3>
 <p>Ideal para desarrolladores que necesitan integrar almacenamiento en la nube en sus aplicaciones Python, desde backups automatizados hasta sistemas de gestión de archivos.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -345,10 +348,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>Serverless: Un Caso Práctico</h1>
-    <p class="talk-event">AWS User Group Paraguay</p>
-    <time datetime="2025-02-20">February 20, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/Zdgguf1tUfY" 
-      title="Serverless: Un Caso Práctico"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>Serverless: Un Caso Práctico</h1>
+      <p class="talk-event">AWS User Group Paraguay</p>
+      <time datetime="2025-02-20">February 20, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/Zdgguf1tUfY" 
+        title="Serverless: Un Caso Práctico"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
 <p>Serverless: Un Caso Práctico fue una charla que impartí con el AWS User Group Paraguay el 20 de Febrero de 2025.</p>
 <p>En esta sesión compartimos nuestra experiencia real con Serverless dentro de AWS, explorando desde los fundamentos hasta la implementación en producción de arquitecturas serverless.</p>
 <h3 id="caso-práctico-real">Caso práctico real</h3>
@@ -322,17 +323,19 @@ body {
 <p>Exploramos las ventajas reales de adoptar serverless, así como las consideraciones importantes al diseñar este tipo de arquitecturas para casos de uso reales en producción.</p>
 <p>Una charla práctica basada en experiencia real, ideal para equipos que están considerando adoptar o mejorar sus implementaciones serverless en AWS.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -347,10 +350,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

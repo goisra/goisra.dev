@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>Introducción a AWS y Boto3: Creando tu primer usuario IAM</h1>
-    <p class="talk-event">Online Resource</p>
-    <time datetime="2025-08-13">August 13, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/ODhIgT-4KfA" 
-      title="Introducción a AWS y Boto3: Creando tu primer usuario IAM"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>Introducción a AWS y Boto3: Creando tu primer usuario IAM</h1>
+      <p class="talk-event">Online Resource</p>
+      <time datetime="2025-08-13">August 13, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/ODhIgT-4KfA" 
+        title="Introducción a AWS y Boto3: Creando tu primer usuario IAM"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
 <p>En este tutorial práctico aprenderás a dar tus primeros pasos con AWS y Boto3, el SDK de AWS para Python.</p>
 <h3 id="qué-aprenderás">¿Qué aprenderás?</h3>
 <ul>
@@ -319,17 +320,19 @@ body {
 <h3 id="ideal-para">Ideal para</h3>
 <p>Este contenido es perfecto para desarrolladores que quieren comenzar a automatizar tareas en AWS usando Python, empezando por la gestión de usuarios y permisos.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -344,10 +347,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {
