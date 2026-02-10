@@ -80,15 +80,22 @@
 
 .talks-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5rem 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.5rem;
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .talks-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .talks-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
