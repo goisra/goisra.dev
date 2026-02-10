@@ -15,8 +15,9 @@
 /* Estilo para enlaces inline en el contenido */
 .content a {
     color: inherit;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
     text-decoration: none;
+    padding-bottom: 2px;
     transition: border-color 0.2s ease;
 }
 
