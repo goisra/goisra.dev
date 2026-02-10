@@ -13,16 +13,20 @@
 }
 
 /* Estilo para enlaces inline en el contenido */
-.content a {
-    color: inherit;
-    border-bottom: 3px solid var(--primary);
-    text-decoration: none;
+.content a,
+.post-content a,
+article a {
+    color: inherit !important;
+    border-bottom: 3px solid var(--primary) !important;
+    text-decoration: none !important;
     padding-bottom: 2px;
     transition: border-color 0.2s ease;
 }
 
-.content a:hover {
-    border-bottom-color: var(--secondary);
+.content a:hover,
+.post-content a:hover,
+article a:hover {
+    border-bottom-color: var(--secondary) !important;
 }
 
     margin: 0 auto;
