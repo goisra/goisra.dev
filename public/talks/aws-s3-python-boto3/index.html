@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>AWS S3 con Python: Creando y gestionando buckets con Boto3</h1>
-    <p class="talk-event">Online Resource</p>
-    <time datetime="2025-08-13">August 13, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/E1NIDs0LoQk" 
-      title="AWS S3 con Python: Creando y gestionando buckets con Boto3"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>AWS S3 con Python: Creando y gestionando buckets con Boto3</h1>
+      <p class="talk-event">Online Resource</p>
+      <time datetime="2025-08-13">August 13, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/E1NIDs0LoQk" 
+        title="AWS S3 con Python: Creando y gestionando buckets con Boto3"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-del-tutorial">Descripción del tutorial</h2>
 <p>En este tutorial aprenderás a trabajar con Amazon S3, el servicio de almacenamiento de objetos de AWS, usando Python y el SDK Boto3.</p>
 <h3 id="qué-aprenderás">¿Qué aprenderás?</h3>
 <ul>
@@ -320,17 +321,19 @@ body {
 <h3 id="para-quién-es-este-contenido">Para quién es este contenido</h3>
 <p>Perfecto para desarrolladores que quieren aprender a gestionar almacenamiento en AWS de forma programática, automatizando la creación y configuración de buckets S3.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -345,10 +348,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

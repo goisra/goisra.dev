@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>AWS Lambda: Menos estrés, más ServerLESS</h1>
-    <p class="talk-event">Online Talk</p>
-    <time datetime="2025-01-08">January 8, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/CcIhGIBnv80" 
-      title="AWS Lambda: Menos estrés, más ServerLESS"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>AWS Lambda: Menos estrés, más ServerLESS</h1>
+      <p class="talk-event">Online Talk</p>
+      <time datetime="2025-01-08">January 8, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/CcIhGIBnv80" 
+        title="AWS Lambda: Menos estrés, más ServerLESS"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
 <p>Este evento fue una experiencia increíble en la que exploramos cómo AWS Lambda puede transformar el desarrollo de aplicaciones en la nube, simplificando procesos, reduciendo el estrés y mejorando la eficiencia en los proyectos.</p>
 <h3 id="participación-internacional">Participación Internacional</h3>
 <p>Llegamos a más de 30 personas de diferentes países, incluyendo: Argentina, Chile, Colombia, Costa Rica, Guatemala, México, Paraguay y Perú. Gracias por hacer de este evento un éxito global.</p>
@@ -326,17 +327,19 @@ body {
 </ul>
 <p>Gracias por ser parte de esta comunidad y por acompañarme en este emocionante viaje en el mundo de AWS y Serverless.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -351,10 +354,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

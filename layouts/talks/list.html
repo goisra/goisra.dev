@@ -1,61 +1,57 @@
 {{- define "main" }}
 
-<header class="page-header">
-  <h1>{{ .Title }}</h1>
-  {{- if .Params.description }}
-  <div class="post-description">{{ .Params.description }}</div>
-  {{- end }}
-</header>
+<div class="talks-container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Params.description }}
+    <div class="post-description">{{ .Params.description }}</div>
+    {{- end }}
+  </header>
 
-<div class="post-content">
-<div class="talks-grid">
-  {{- range .Pages }}
-  <article class="talk-card" data-video="{{ .Params.videoId }}">
-    <a href="{{ .Permalink }}" class="talk-thumbnail">
-      {{- if .Params.videoId }}
-      <img src="https://img.youtube.com/vi/{{ .Params.videoId }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
-      <div class="play-button">
-        <svg viewBox="0 0 24 24" width="48" height="34">
-          <path fill="#fff" d="M8 5v14l11-7z"/>
-        </svg>
+  <div class="talks-grid">
+    {{- range .Pages }}
+    <article class="talk-card" data-video="{{ .Params.videoId }}">
+      <a href="{{ .Permalink }}" class="talk-thumbnail">
+        {{- if .Params.videoId }}
+        <img src="https://img.youtube.com/vi/{{ .Params.videoId }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
+        <div class="video-duration">{{ .Params.duration | default "00:00" }}</div>
+        {{- else }}
+        <div class="no-thumbnail">
+          <span>🎤</span>
+        </div>
+        {{- end }}
+      </a>
+      
+      <div class="talk-info">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div class="talk-meta">
+          {{- if .Params.event }}
+          <p class="talk-event">{{ .Params.event }}</p>
+          {{- end }}
+          {{- if .Date }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- end }}
+        </div>
       </div>
-      <div class="video-duration">{{ .Params.duration | default "00:00" }}</div>
-      {{- else }}
-      <div class="no-thumbnail">
-        <span>🎤</span>
-      </div>
-      {{- end }}
-    </a>
+    </article>
+    {{- end }}
     
-    <div class="talk-info">
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <div class="talk-meta">
-        {{- if .Params.event }}
-        <p class="talk-event">{{ .Params.event }}</p>
-        {{- end }}
-        {{- if .Date }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{- end }}
-      </div>
+    {{- if eq (len .Pages) 0 }}
+    <div class="empty-state">
+      <p>🎤 Próximamente nuevas charlas y presentaciones...</p>
     </div>
-  </article>
-  {{- end }}
-  
-  {{- if eq (len .Pages) 0 }}
-  <div class="empty-state">
-    <p>🎤 Próximamente nuevas charlas y presentaciones...</p>
+    {{- end }}
   </div>
-  {{- end }}
-</div>
 </div>
 
 <style>
-.page-header {
+.talks-container {
   max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.page-header {
   margin-bottom: 3rem;
 }
 
@@ -68,14 +64,6 @@
   text-justify: inter-word;
   line-height: 1.7;
   font-size: 1.05rem;
-}
-
-.post-content {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .talks-grid {
@@ -125,35 +113,6 @@
 
 .talk-card:hover .talk-thumbnail img {
   transform: scale(1.05);
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 52px;
-  height: 36px;
-  background: rgb(255, 0, 0);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  opacity: 0.95;
-}
-
-.play-button svg {
-  width: 20px;
-  height: 20px;
-  margin-left: 3px;
-}
-
-.talk-card:hover .play-button {
-  background: rgb(204, 0, 0);
-  transform: translate(-50%, -50%) scale(1.1);
-  opacity: 1;
 }
 
 .video-duration {

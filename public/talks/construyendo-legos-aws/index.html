@@ -287,26 +287,27 @@ body {
 </header>
 <main class="main">
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
-</div>
-
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>Construyendo Legos con AWS</h1>
-    <p class="talk-event">AWS Cloud Club UTP</p>
-    <time datetime="2025-09-17">September 17, 2025</time>
-  </header>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/eJ-mrjYpQeE" 
-      title="Construyendo Legos con AWS"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
   </div>
-  <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>Construyendo Legos con AWS</h1>
+      <p class="talk-event">AWS Cloud Club UTP</p>
+      <time datetime="2025-09-17">September 17, 2025</time>
+    </header>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/eJ-mrjYpQeE" 
+        title="Construyendo Legos con AWS"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="post-content talk-description"><h2 id="descripción-de-la-charla">Descripción de la charla</h2>
 <p>Construyendo Legos con AWS fue una plática que impartí con el AWS Cloud Club UTP el 17 de Septiembre de 2025.</p>
 <p>Esta sesión invita a reflexionar sobre la imaginación de tener un enorme set de Legos para diseñar cualquier cosa que imagines: ¡eso es AWS!</p>
 <h3 id="aws-como-bloques-de-construcción">AWS como bloques de construcción</h3>
@@ -315,17 +316,19 @@ body {
 <h3 id="una-invitación-a-crear">Una invitación a crear</h3>
 <p>Una invitación a experimentar, aprender y crear en la nube, usando los servicios de AWS como piezas de Lego que se conectan entre sí para dar vida a tus ideas.</p>
 
-  </div>
-</article>
+    </div>
+  </article>
+</div>
 
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -340,10 +343,7 @@ body {
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {

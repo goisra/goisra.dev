@@ -1,47 +1,50 @@
 {{- define "main" }}
 
-<div class="back-link-top">
-  <a href="/talks" class="back-link">← Volver a Talks</a>
+<div class="talk-single-container">
+  <div class="back-link-top">
+    <a href="/talks" class="back-link">← Volver a Talks</a>
+  </div>
+
+  <article class="talk-single">
+    <header class="talk-header">
+      <h1>{{ .Title }}</h1>
+      {{- if .Params.event }}
+      <p class="talk-event">{{ .Params.event }}</p>
+      {{- end }}
+      {{- if .Date }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{- end }}
+    </header>
+
+    {{- if .Params.videoId }}
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/{{ .Params.videoId }}" 
+        title="{{ .Title }}"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    {{- end }}
+
+    {{- if .Content }}
+    <div class="post-content talk-description">
+      {{- .Content }}
+    </div>
+    {{- end }}
+  </article>
 </div>
 
-<article class="talk-single">
-  <header class="talk-header">
-    <h1>{{ .Title }}</h1>
-    {{- if .Params.event }}
-    <p class="talk-event">{{ .Params.event }}</p>
-    {{- end }}
-    {{- if .Date }}
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-    {{- end }}
-  </header>
-
-  {{- if .Params.videoId }}
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/{{ .Params.videoId }}" 
-      title="{{ .Title }}"
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
-  </div>
-  {{- end }}
-
-  {{- if .Content }}
-  <div class="post-content talk-description">
-    {{- .Content }}
-  </div>
-  {{- end }}
-</article>
-
 <style>
+.talk-single-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
 .back-link-top {
   margin-bottom: 1.5rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
 }
 
 .back-link {
@@ -56,10 +59,7 @@
 }
 
 .talk-single {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  width: 100%;
 }
 
 .talk-header {
