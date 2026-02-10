@@ -4,6 +4,7 @@ date: 2025-08-13
 event: "Online Resource"
 description: "Domina la creación y gestión de buckets de Amazon S3 utilizando Python y Boto3 para almacenamiento escalable en la nube."
 videoId: "E1NIDs0LoQk"
+duration: "18:52"
 ---
 
 ## Descripción del tutorial

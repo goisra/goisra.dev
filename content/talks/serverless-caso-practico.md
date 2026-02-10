@@ -4,6 +4,7 @@ date: 2025-02-20
 event: "AWS User Group Paraguay"
 description: "Experiencia real implementando arquitecturas Serverless en AWS, desde el diseño hasta la producción."
 videoId: "Zdgguf1tUfY"
+duration: "42:18"
 ---
 
 ## Descripción de la charla

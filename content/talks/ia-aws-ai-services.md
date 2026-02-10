@@ -4,6 +4,7 @@ date: 2025-12-06
 event: "AWS User Group Orizaba"
 description: "Exploramos cómo integrar de manera sencilla y práctica los servicios de IA de AWS en tus proyectos para potenciar tus aplicaciones con análisis inteligente y automatización avanzada."
 videoId: "UzEzaG5CNGs"
+duration: "58:42"
 ---
 
 ## Descripción de la charla

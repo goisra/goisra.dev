@@ -4,6 +4,7 @@ date: 2025-11-20
 event: "AWS User Group Minatitlán"
 description: "Aprender AWS es más que conocer servicios: es adoptar la mentalidad que impulsa la innovación en la nube."
 videoId: "GOhT8UNlARo"
+duration: "52:18"
 ---
 
 ## Descripción de la charla

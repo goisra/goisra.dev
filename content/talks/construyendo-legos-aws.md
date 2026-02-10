@@ -4,6 +4,7 @@ date: 2025-09-17
 event: "AWS Cloud Club UTP"
 description: "AWS nos ofrece bloques tecnológicos listos para ensamblar y crear soluciones en la nube."
 videoId: "eJ-mrjYpQeE"
+duration: "38:15"
 ---
 
 ## Descripción de la charla

@@ -4,6 +4,7 @@ date: 2025-08-13
 event: "Online Resource"
 description: "Aprende las operaciones fundamentales para gestionar buckets de S3 usando Python, desde la creación hasta la eliminación."
 videoId: "ADXjtE6W95A"
+duration: "14:36"
 ---
 
 ## Descripción del tutorial

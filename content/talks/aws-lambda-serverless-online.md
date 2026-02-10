@@ -4,6 +4,7 @@ date: 2025-01-08
 event: "Online Talk"
 description: "Webinar internacional sobre cómo AWS Lambda puede transformar el desarrollo de aplicaciones en la nube, simplificando procesos y mejorando la eficiencia."
 videoId: "CcIhGIBnv80"
+duration: "1:08:24"
 ---
 
 ## Descripción de la charla

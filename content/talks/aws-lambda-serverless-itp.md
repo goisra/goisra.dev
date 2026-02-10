@@ -4,6 +4,7 @@ date: 2025-09-20
 event: "Jornada Internacional de TICs y Software Libre"
 description: "AWS Lambda es uno de los pilares del enfoque serverless en AWS. Aprende cómo funciona, cuándo usarlo y cómo integrarlo con otros servicios."
 videoId: "sIHvoe33DH4"
+duration: "45:32"
 ---
 
 ## Descripción de la charla

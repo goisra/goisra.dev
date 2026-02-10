@@ -4,6 +4,7 @@ date: 2025-08-14
 event: "Online Resource"
 description: "Aprende a interactuar con Amazon S3 usando Python y Boto3 para subir, descargar y gestionar archivos en la nube."
 videoId: "8gf-jffJZh0"
+duration: "15:28"
 ---
 
 ## Descripción del tutorial

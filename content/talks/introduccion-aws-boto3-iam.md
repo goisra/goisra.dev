@@ -4,6 +4,7 @@ date: 2025-08-13
 event: "Online Resource"
 description: "Aprende a automatizar la gestión de identidades en AWS usando Python y Boto3 para crear y configurar usuarios IAM."
 videoId: "ODhIgT-4KfA"
+duration: "12:45"
 ---
 
 ## Descripción del tutorial
