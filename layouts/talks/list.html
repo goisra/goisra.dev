@@ -109,7 +109,7 @@
 .talk-thumbnail {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
@@ -132,26 +132,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 68px;
-  height: 48px;
-  background: rgba(255, 0, 0, 0.9);
-  border-radius: 12px;
+  width: 52px;
+  height: 36px;
+  background: rgb(255, 0, 0);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  opacity: 0.95;
 }
 
 .play-button svg {
-  width: 28px;
-  height: 28px;
-  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
 }
 
 .talk-card:hover .play-button {
-  background: rgba(255, 0, 0, 1);
+  background: rgb(204, 0, 0);
   transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
 }
 
 .video-duration {
