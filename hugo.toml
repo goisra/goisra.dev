@@ -3,6 +3,9 @@ languageCode = 'us'
 title = 'Israel Jesús'
 theme = 'PaperMod'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [imaging]
   quality = 100
   resampleFilter = "lanczos"
