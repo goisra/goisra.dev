@@ -13,7 +13,7 @@
   <article class="talk-card" data-video="{{ .Params.videoId }}">
     <a href="{{ .Permalink }}" class="talk-thumbnail">
       {{- if .Params.videoId }}
-      <img src="https://img.youtube.com/vi/{{ .Params.videoId }}/maxresdefault.jpg" alt="{{ .Title }}" loading="lazy">
+      <img src="https://img.youtube.com/vi/{{ .Params.videoId }}/hqdefault.jpg" alt="{{ .Title }}" loading="lazy">
       <div class="play-button">
         <svg viewBox="0 0 24 24" width="48" height="34">
           <path fill="#fff" d="M8 5v14l11-7z"/>
@@ -50,9 +50,25 @@
 </div>
 
 <style>
+.page-header {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
+.post-content {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
 .talks-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2.5rem 1.5rem;
   margin-top: 2rem;
 }
