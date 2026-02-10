@@ -261,7 +261,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">58:42</div>
     </a>
     
     <div class="talk-info">
@@ -280,7 +280,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">52:18</div>
     </a>
     
     <div class="talk-info">
@@ -299,7 +299,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">45:32</div>
     </a>
     
     <div class="talk-info">
@@ -318,7 +318,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">38:15</div>
     </a>
     
     <div class="talk-info">
@@ -337,7 +337,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">15:28</div>
     </a>
     
     <div class="talk-info">
@@ -356,7 +356,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">18:52</div>
     </a>
     
     <div class="talk-info">
@@ -375,7 +375,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">14:36</div>
     </a>
     
     <div class="talk-info">
@@ -394,7 +394,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">12:45</div>
     </a>
     
     <div class="talk-info">
@@ -413,7 +413,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">42:18</div>
     </a>
     
     <div class="talk-info">
@@ -432,7 +432,7 @@ body {
           <path fill="#fff" d="M8 5v14l11-7z"/>
         </svg>
       </div>
-      <div class="video-duration">00:00</div>
+      <div class="video-duration">1:08:24</div>
     </a>
     
     <div class="talk-info">
@@ -453,6 +453,18 @@ body {
   margin-right: auto;
   padding-left: var(--gap);
   padding-right: var(--gap);
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.post-description {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .post-content {
@@ -465,9 +477,9 @@ body {
 
 .talks-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2.5rem 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -487,7 +499,7 @@ body {
 .talk-thumbnail {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   background: #000;
   border-radius: 10px;
   overflow: hidden;
@@ -510,35 +522,39 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 48px;
-  height: 34px;
+  width: 68px;
+  height: 48px;
   background: rgba(255, 0, 0, 0.9);
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .play-button svg {
-  width: 48px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
+  margin-left: 4px;
 }
 
 .talk-card:hover .play-button {
   background: rgba(255, 0, 0, 1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .video-duration {
   position: absolute;
-  bottom: 6px;
-  right: 6px;
-  background: rgba(0, 0, 0, 0.8);
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.85);
   color: white;
-  padding: 1px 4px;
-  border-radius: 3px;
-  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .no-thumbnail {
