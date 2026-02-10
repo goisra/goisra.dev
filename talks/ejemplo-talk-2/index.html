@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="light">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Arquitecturas Serverless en AWS | Israel Jesús</title>
 <meta name="keywords" content="">
 <meta name="description" content="Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.">
 <meta name="author" content="Israel Jesús">
-<link rel="canonical" href="https://goisra.dev/talks/ejemplo-talk-2/">
+<link rel="canonical" href="http://localhost:1313/talks/ejemplo-talk-2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3c3ef91a3bed81c525c142086fcac1d12ea65a2ac2ecdfdc6356c9a114be8bfd.css" integrity="sha256-PD75GjvtgcUlwUIIb8rB0S6mWirC7N/cY1bJoRS&#43;i/0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://goisra.dev/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://goisra.dev/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://goisra.dev/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://goisra.dev/apple-touch-icon.png">
-<link rel="mask-icon" href="https://goisra.dev/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://goisra.dev/talks/ejemplo-talk-2/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/talks/ejemplo-talk-2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -76,53 +76,6 @@
 }
 
  
-
- 
-.talks-section,
-.blog-section,
-.talks-list,
-.blog-list,
-.talks-grid,
-.blog-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--gap);
-    box-sizing: border-box;
-}
-
- 
-body[data-section="talks"] .main,
-body[data-section="blog"] .main,
-.talks-content,
-.blog-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--gap);
-}
-
- 
-body[data-section="talks"] .post-content,
-body[data-section="blog"] .post-content,
-.talks-content .post-content,
-.blog-content .post-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--gap) !important;
-}
-
- 
-.talks-section .page-header,
-.blog-section .page-header,
-body[data-section="talks"] .page-header,
-body[data-section="blog"] .page-header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--gap);
-}
-
- 
-
- 
  
 body .about-content-plain,
 .post-single,
@@ -136,15 +89,6 @@ article,
     box-shadow: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
-}
-
- 
-.entry-content p,
-.post-content p {
-    text-align: justify !important;
-    text-justify: inter-word;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
 }
 
  
@@ -170,79 +114,13 @@ body {
     background: var(--theme) !important;
 }
 </style>
-<meta property="og:url" content="https://goisra.dev/talks/ejemplo-talk-2/">
-  <meta property="og:site_name" content="Israel Jesús">
-  <meta property="og:title" content="Arquitecturas Serverless en AWS">
-  <meta property="og:description" content="Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.">
-  <meta property="og:locale" content="us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="talks">
-    <meta property="article:published_time" content="2024-02-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-02-10T00:00:00+00:00">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Arquitecturas Serverless en AWS">
-<meta name="twitter:description" content="Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Talks \u0026 Presentations",
-      "item": "https://goisra.dev/talks/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Arquitecturas Serverless en AWS",
-      "item": "https://goisra.dev/talks/ejemplo-talk-2/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Arquitecturas Serverless en AWS",
-  "name": "Arquitecturas Serverless en AWS",
-  "description": "Explorando patrones de diseño serverless y cómo implementarlos eficientemente en AWS Lambda.",
-  "keywords": [
-    
-  ],
-  "articleBody": "Descripción de la charla En esta sesión profundizamos en:\nArquitecturas Serverless Qué es serverless y cuándo usarlo AWS Lambda: Fundamentos y mejores prácticas Integración con otros servicios AWS Patrones de Diseño API Gateway + Lambda Event-driven architectures Step Functions para workflows complejos Demo en Vivo Construimos una aplicación serverless completa desde cero, incluyendo:\nAutenticación con Cognito Procesamiento de eventos Almacenamiento en DynamoDB ",
-  "wordCount" : "62",
-  "inLanguage": "en",
-  "datePublished": "2024-02-10T00:00:00Z",
-  "dateModified": "2024-02-10T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Israel Jesús"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://goisra.dev/talks/ejemplo-talk-2/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Israel Jesús",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://goisra.dev/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://goisra.dev/" accesskey="h" title="Israel Jesús (Alt + H)">Israel Jesús</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Israel Jesús (Alt + H)">Israel Jesús</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -268,17 +146,17 @@ body {
         </div>
         <ul id="menu">
             <li>
-                <a href="https://goisra.dev/about" title="About">
+                <a href="http://localhost:1313/about" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://goisra.dev/talks" title="Talks">
+                <a href="http://localhost:1313/talks" title="Talks">
                     <span>Talks</span>
                 </a>
             </li>
             <li>
-                <a href="https://goisra.dev/blog" title="Blog">
+                <a href="http://localhost:1313/blog" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
@@ -397,7 +275,7 @@ body {
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://goisra.dev/">Israel Jesús</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Israel Jesús</a></span> · 
 
     <span>
         Powered by
