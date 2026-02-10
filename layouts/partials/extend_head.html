@@ -41,6 +41,16 @@
     padding: 0 2rem; /* Márgenes laterales consistentes */
 }
 
+/* Contenedor principal consistente para todas las páginas */
+main,
+.main,
+#main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
 /* Aplicar mismos márgenes a secciones Talks y Blog */
 .talks-section,
 .blog-section,
@@ -71,11 +81,48 @@ body[data-section="blog"] .main,
     padding: 0 2rem !important;
 }
 
-/* Márgenes para headers de páginas */
+/* Eliminar padding extra que pueda afectar el alineamiento */
+.post-content,
+.entry-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Márgenes para headers de páginas - alineados con el contenido */
 .page-header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    text-align: left !important;
+}
+
+/* Títulos de páginas con mismo estilo */
+.page-header h1,
+.page-header h2 {
+    text-align: left !important;
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+/* Asegurar que todos los headers tengan el mismo estilo */
+header.page-header,
+.entry-header,
+.post-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: left !important;
+}
+
+/* Títulos consistentes en todas las páginas */
+.entry-header h1,
+.entry-header h2,
+.post-header h1,
+.post-header h2 {
+    text-align: left !important;
+    margin: 0;
+    font-weight: 600;
 }
 
 /* Estilos específicos para TODAS las páginas About - diseño completamente plano */
