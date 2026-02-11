@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS | Israel Jesús</title>
 <meta name="keywords" content="amazon-sns, serverless, architecture, real-time, billing">
-<meta name="description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...">
+<meta name="description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.">
 <meta name="author" content="Israel Jesús García">
 <link rel="canonical" href="https://goisra.dev/blog/amazon-sns-notifications/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6ca8c2c60fea862935e4b11e366e55c2e28635880c7c14b8c96762577ab5f37b.css" integrity="sha256-bKjCxg/qhik15LEeNm5VwuKGNYgMfBS4yWdiV3q183s=" rel="preload stylesheet" as="style">
@@ -173,7 +173,7 @@ body {
 <meta property="og:url" content="https://goisra.dev/blog/amazon-sns-notifications/">
   <meta property="og:site_name" content="Israel Jesús">
   <meta property="og:title" content="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
-  <meta property="og:description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...">
+  <meta property="og:description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.">
   <meta property="og:locale" content="us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -186,7 +186,7 @@ body {
     <meta property="article:tag" content="Billing">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
-<meta name="twitter:description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...">
+<meta name="twitter:description" content="Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.">
 
 
 <script type="application/ld+json">
@@ -215,7 +215,7 @@ body {
   "@type": "BlogPosting",
   "headline": "Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS",
   "name": "Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS",
-  "description": "Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...",
+  "description": "Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.",
   "keywords": [
     "amazon-sns", "serverless", "architecture", "real-time", "billing"
   ],
@@ -293,6 +293,10 @@ body {
 <main class="main">
 
 <div class="blog-single-container">
+  <div class="back-link-top">
+    <a href="/blog" class="back-link">← Volver a blogs</a>
+  </div>
+
   <article class="post-single">
     <div class="featured-image">
       <img src="/images/blog-sns-1.webp" alt="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
@@ -304,7 +308,7 @@ body {
       </h1>
     </header>
     <div class="post-description">
-      <p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...</p>
+      <p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
     </div>
     <div class="blog-author-header">
       <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar-large">
@@ -315,105 +319,6 @@ body {
       <div class="post-date-wrapper">
         <time datetime="2025-11-17" class="post-date">Published Nov 17, 2025</time>
       </div>
-    </div>
-    <div class="post-content"><p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
-<h2 id="what-is-amazon-sns">What is Amazon SNS?<a hidden class="anchor" aria-hidden="true" href="#what-is-amazon-sns">#</a></h2>
-<p>Amazon SNS is a fully managed pub/sub messaging service that allows you to send notifications to multiple subscribers through different channels such as email, SMS, mobile push notifications, and HTTP/HTTPS endpoints. It&rsquo;s designed to be highly available, scalable, and secure.</p>
-<h2 id="architecture-overview">Architecture Overview<a hidden class="anchor" aria-hidden="true" href="#architecture-overview">#</a></h2>
-<p><img alt="Amazon SNS Architecture" loading="lazy" src="/images/blog-sns-1.webp"></p>
-<p>The diagram above shows a typical SNS architecture where publishers send messages to SNS topics, which then distribute them to multiple subscribers including Lambda functions, SQS queues, HTTP endpoints, and mobile applications.</p>
-<h2 id="key-features">Key Features<a hidden class="anchor" aria-hidden="true" href="#key-features">#</a></h2>
-<h3 id="flexible-message-delivery">Flexible Message Delivery<a hidden class="anchor" aria-hidden="true" href="#flexible-message-delivery">#</a></h3>
-<p>SNS supports multiple protocols for message delivery:</p>
-<ul>
-<li><strong>Email/Email-JSON</strong>: Perfect for notifications and alerts</li>
-<li><strong>SMS</strong>: Direct text messages to mobile phones</li>
-<li><strong>Mobile Push</strong>: iOS, Android, and other mobile platforms</li>
-<li><strong>HTTP/HTTPS</strong>: Webhooks to your services</li>
-<li><strong>AWS Lambda</strong>: Trigger serverless functions</li>
-<li><strong>Amazon SQS</strong>: Queue messages for processing</li>
-<li><strong>Amazon Kinesis Data Firehose</strong>: Stream data for analytics</li>
-</ul>
-<h3 id="message-filtering">Message Filtering<a hidden class="anchor" aria-hidden="true" href="#message-filtering">#</a></h3>
-<p>Subscribers can filter messages based on message attributes, ensuring they only receive relevant notifications. This reduces unnecessary processing and improves efficiency.</p>
-<h3 id="fan-out-pattern">Fan-Out Pattern<a hidden class="anchor" aria-hidden="true" href="#fan-out-pattern">#</a></h3>
-<p>SNS excels at implementing the fan-out pattern, where a single message is delivered to multiple subscribers simultaneously. This is ideal for:</p>
-<ul>
-<li>Broadcasting system alerts to multiple teams</li>
-<li>Triggering parallel processing workflows</li>
-<li>Distributing data to multiple analytics systems</li>
-</ul>
-<h2 id="real-world-use-cases">Real-World Use Cases<a hidden class="anchor" aria-hidden="true" href="#real-world-use-cases">#</a></h2>
-<h3 id="1-application-alerts-and-monitoring">1. Application Alerts and Monitoring<a hidden class="anchor" aria-hidden="true" href="#1-application-alerts-and-monitoring">#</a></h3>
-<p>Monitor your applications and send real-time alerts when:</p>
-<ul>
-<li>System errors occur</li>
-<li>Performance thresholds are exceeded</li>
-<li>Security events are detected</li>
-</ul>
-<h3 id="2-user-notifications">2. User Notifications<a hidden class="anchor" aria-hidden="true" href="#2-user-notifications">#</a></h3>
-<p>Keep your users informed with:</p>
-<ul>
-<li>Order confirmations and shipping updates</li>
-<li>Account activity alerts</li>
-<li>Promotional campaigns</li>
-</ul>
-<h3 id="3-workflow-orchestration">3. Workflow Orchestration<a hidden class="anchor" aria-hidden="true" href="#3-workflow-orchestration">#</a></h3>
-<p>Coordinate distributed systems by:</p>
-<ul>
-<li>Triggering Lambda functions for event-driven architectures</li>
-<li>Coordinating microservices communication</li>
-<li>Implementing saga patterns for distributed transactions</li>
-</ul>
-<h2 id="best-practices">Best Practices<a hidden class="anchor" aria-hidden="true" href="#best-practices">#</a></h2>
-<h3 id="1-use-message-attributes-for-filtering">1. Use Message Attributes for Filtering<a hidden class="anchor" aria-hidden="true" href="#1-use-message-attributes-for-filtering">#</a></h3>
-<p>Instead of sending all messages to all subscribers, use message attributes to route messages intelligently:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Type&#34;</span>: <span style="color:#e6db74">&#34;error&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Severity&#34;</span>: <span style="color:#e6db74">&#34;high&#34;</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Service&#34;</span>: <span style="color:#e6db74">&#34;payment-api&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="2-implement-idempotency">2. Implement Idempotency<a hidden class="anchor" aria-hidden="true" href="#2-implement-idempotency">#</a></h3>
-<p>Design your subscribers to handle duplicate messages gracefully, as SNS guarantees at-least-once delivery.</p>
-<h3 id="3-monitor-with-cloudwatch">3. Monitor with CloudWatch<a hidden class="anchor" aria-hidden="true" href="#3-monitor-with-cloudwatch">#</a></h3>
-<p>Set up CloudWatch alarms for:</p>
-<ul>
-<li>Number of notifications failed</li>
-<li>Number of messages published</li>
-<li>Delivery success rates</li>
-</ul>
-<h3 id="4-secure-your-topics">4. Secure Your Topics<a hidden class="anchor" aria-hidden="true" href="#4-secure-your-topics">#</a></h3>
-<ul>
-<li>Use IAM policies to control who can publish to topics</li>
-<li>Implement VPC endpoints for private communication</li>
-<li>Enable encryption at rest and in transit</li>
-</ul>
-<h2 id="cost-optimization">Cost Optimization<a hidden class="anchor" aria-hidden="true" href="#cost-optimization">#</a></h2>
-<p>SNS pricing is based on:</p>
-<ul>
-<li>Number of API requests (publishes, notifications)</li>
-<li>Data transfer</li>
-<li>Notification type (SMS is more expensive than email)</li>
-</ul>
-<p>Tips to optimize costs:</p>
-<ul>
-<li>Batch messages when possible</li>
-<li>Use message filtering to reduce unnecessary deliveries</li>
-<li>Choose the most cost-effective delivery channel for your use case</li>
-</ul>
-<h2 id="getting-started">Getting Started<a hidden class="anchor" aria-hidden="true" href="#getting-started">#</a></h2>
-<p>Creating an SNS topic and subscription is straightforward:</p>
-<ol>
-<li><strong>Create a Topic</strong>: Define your message channel</li>
-<li><strong>Subscribe Endpoints</strong>: Add email, SMS, Lambda, or other subscribers</li>
-<li><strong>Publish Messages</strong>: Send notifications through the AWS console, CLI, or SDK</li>
-<li><strong>Monitor</strong>: Track delivery and performance metrics</li>
-</ol>
-<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
-<p>Amazon SNS is a powerful service that simplifies building event-driven and distributed applications. Its flexibility, scalability, and integration with other AWS services make it an essential tool for modern cloud architectures.</p>
-<p>Whether you&rsquo;re building a simple notification system or orchestrating complex workflows, SNS provides the reliability and performance you need to keep your systems and users informed in real time.</p>
-
-
     </div>
 
     <footer class="post-footer">
@@ -435,17 +340,36 @@ body {
   padding: 0 var(--gap);
 }
 
+.back-link-top {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--secondary);
+}
+
 .featured-image {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   border-radius: 8px;
   overflow: hidden;
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .featured-image img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
   display: block;
 }
