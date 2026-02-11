@@ -246,100 +246,76 @@ body {
 </header>
 <main class="main">
 
-<header class="page-header">
-  <h1>Blog</h1>
-  <div class="post-description">I use this space to share lessons learned, tutorials, and reflections from my journey in cloud computing, software development, and real-world projects. Writing allows me to document what I learn, simplify complex topics, and turn hands-on experience into practical content. My goal is to create resources that help others understand, build, and grow in the cloud while contributing back to the community through knowledge sharing and continuous learning.</div>
-</header>
+<div class="blog-container">
+  <header class="page-header">
+    <h1>Blog</h1>
+    <div class="post-description">I use this space to share lessons learned, tutorials, and reflections from my journey in cloud computing, software development, and real-world projects. Writing allows me to document what I learn, simplify complex topics, and turn hands-on experience into practical content. My goal is to create resources that help others understand, build, and grow in the cloud while contributing back to the community through knowledge sharing and continuous learning.</div>
+  </header>
 
-<div class="post-content">
-<div class="blog-grid">
-  <article class="blog-card">
-    <div class="blog-card-content">
-      <div class="blog-card-header">
-        <span class="blog-icon">🎯</span>
-        <h2><a href="https://goisra.dev/blog/ejemplo-3/">Ejemplo de Artículo 3</a></h2>
-      </div>
-      <p class="blog-excerpt">Tercer ejemplo mostrando diferentes estilos y formatos de contenido.</p>
-      
-      <div class="blog-meta">
-        <time datetime="2024-02-05">February 5, 2024</time>
-        <div class="blog-tags">
-          <span class="tag">kubernetes</span>
-          <span class="tag">containers</span>
-          <span class="tag">cloud-native</span>
+  <div class="blog-grid">
+    <article class="blog-card">
+      <div class="blog-card-content">
+        <div class="blog-author-section">
+          <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar">
+          <div class="author-info">
+            <h3 class="author-name">Israel Jesús García</h3>
+            <p class="author-role">Site Reliability Engineer</p>
+          </div>
+        </div>
+        
+        <div class="blog-card-header">
+          <h2><a href="https://goisra.dev/blog/amazon-sns-notifications/">Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</a></h2>
+        </div>
+        <p class="blog-excerpt">Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...</p>
+        
+        <div class="blog-meta">
+          <time datetime="2024-12-20">December 20, 2024</time>
+          <div class="blog-tags">
+            <span class="tag">amazon-sns</span>
+            <span class="tag">serverless</span>
+            <span class="tag">architecture</span>
+            <span class="tag">real-time</span>
+            <span class="tag">billing</span>
+          </div>
         </div>
       </div>
-    </div>
-  </article>
-  <article class="blog-card">
-    <div class="blog-card-content">
-      <div class="blog-card-header">
-        <span class="blog-icon">🚀</span>
-        <h2><a href="https://goisra.dev/blog/ejemplo-2/">Ejemplo de Artículo 2</a></h2>
-      </div>
-      <p class="blog-excerpt">Otro ejemplo de artículo para mostrar cómo se ve la grilla de posts cuando hay múltiples artículos.</p>
-      
-      <div class="blog-meta">
-        <time datetime="2024-02-01">February 1, 2024</time>
-        <div class="blog-tags">
-          <span class="tag">networking</span>
-          <span class="tag">devops</span>
-        </div>
-      </div>
-    </div>
-  </article>
-  <article class="blog-card">
-    <div class="blog-card-content">
-      <div class="blog-card-header">
-        <span class="blog-icon">☁️</span>
-        <h2><a href="https://goisra.dev/blog/ejemplo-1/">Ejemplo de Artículo 1</a></h2>
-      </div>
-      <p class="blog-excerpt">Este es un ejemplo de cómo se verá un artículo de blog. Aquí puedes escribir sobre tecnología, tutoriales, experiencias, etc.</p>
-      
-      <div class="blog-meta">
-        <time datetime="2024-01-15">January 15, 2024</time>
-        <div class="blog-tags">
-          <span class="tag">cloud</span>
-          <span class="tag">aws</span>
-          <span class="tag">tutorial</span>
-        </div>
-      </div>
-    </div>
-  </article>
-</div>
+    </article>
+  </div>
 </div>
 
 <style>
-.page-header {
+.blog-container {
   max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  margin: 0 auto;
+  padding: 0 var(--gap);
 }
 
-.post-content {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.post-description {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .blog-grid {
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-top: 2rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0;
 }
 
 .blog-card {
   background: transparent;
   border-radius: 0;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   transition: transform 0.2s ease;
   border: none;
   border-bottom: 1px solid var(--border);
@@ -349,22 +325,48 @@ body {
   transform: translateX(5px);
 }
 
-.blog-card-header {
+.blog-author-section {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.blog-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary);
+}
+
+.author-role {
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--secondary);
+}
+
+.blog-card-header {
+  margin-bottom: 0.75rem;
 }
 
 .blog-card h2 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 600;
+  line-height: 1.3;
 }
 
 .blog-card h2 a {
@@ -372,11 +374,15 @@ body {
   text-decoration: none;
 }
 
+.blog-card h2 a:hover {
+  color: var(--secondary);
+}
+
 .blog-excerpt {
   color: var(--secondary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -387,13 +393,17 @@ body {
   gap: 0.5rem;
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 1rem;
+}
+
+.blog-meta time {
+  font-weight: 500;
 }
 
 .blog-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 .tag {
@@ -406,10 +416,6 @@ body {
 
 .tag::before {
   content: "#";
-}
-
-.read-more {
-  display: none;
 }
 
 .empty-state {
