@@ -12,35 +12,47 @@
     {{- range .Pages }}
     <article class="blog-card">
       <div class="blog-card-content">
-        {{- if .Params.authorImage }}
-        <div class="blog-author-section">
-          <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar">
-          <div class="author-info">
-            <h3 class="author-name">{{ .Params.author | default "Israel Jesús García" }}</h3>
-            <p class="author-role">{{ .Params.role | default "Site Reliability Engineer" }}</p>
+        {{- if .Params.featuredImage }}
+        <div class="blog-thumbnail">
+          <a href="{{ .Permalink }}">
+            <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
+          </a>
+        </div>
+        {{- end }}
+        
+        <div class="blog-card-body">
+          <div class="blog-author-section">
+            {{- if .Params.authorImage }}
+            <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar">
+            {{- end }}
+            <div class="author-info">
+              <h3 class="author-name"><a href="/about">Israel Jesús</a></h3>
+              <p class="author-role">{{ .Params.role | default "Site Reliability Engineer | AWS User Group Puebla Leader" }}</p>
+              {{- if .Date }}
+              {{- $daysSince := div (sub now.Unix .Date.Unix) 86400 }}
+              {{- $weeksSince := div $daysSince 7 }}
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">{{ $weeksSince }}w ago</time>
+              {{- end }}
+            </div>
           </div>
-        </div>
-        {{- end }}
-        
-        <div class="blog-card-header">
-          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        </div>
-        
-        {{- if .Params.description }}
-        <p class="blog-excerpt">{{ .Params.description }}</p>
-        {{- end }}
-        
-        <div class="blog-meta">
-          {{- if .Date }}
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          
+          <div class="blog-card-header">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </div>
+          
+          {{- if .Params.description }}
+          <p class="blog-excerpt">{{ .Params.description }}</p>
           {{- end }}
-          {{- if .Params.tags }}
-          <div class="blog-tags">
-            {{- range .Params.tags }}
-            <span class="tag">{{ . }}</span>
+          
+          <div class="blog-meta">
+            {{- if .Params.tags }}
+            <div class="blog-tags">
+              {{- range .Params.tags }}
+              <span class="tag">{{ . }}</span>
+              {{- end }}
+            </div>
             {{- end }}
           </div>
-          {{- end }}
         </div>
       </div>
     </article>
@@ -86,55 +98,96 @@
 .blog-card {
   background: transparent;
   border-radius: 0;
-  padding: 2rem 0;
-  transition: transform 0.2s ease;
+  padding: 1.5rem 0;
   border: none;
   border-bottom: 1px solid var(--border);
 }
 
-.blog-card:hover {
-  transform: translateX(5px);
+.blog-card-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.blog-thumbnail {
+  flex-shrink: 0;
+  width: 280px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.blog-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.blog-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-author-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .author-avatar {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .author-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
 }
 
 .author-name {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
+}
+
+.author-name a {
   color: var(--primary);
+  text-decoration: none;
+}
+
+.author-name a:hover {
+  text-decoration: underline;
 }
 
 .author-role {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   margin: 0;
   color: var(--secondary);
 }
 
+.post-time {
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
 .blog-card-header {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .blog-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0;
   font-weight: 600;
   line-height: 1.3;
@@ -151,11 +204,15 @@
 
 .blog-excerpt {
   color: var(--secondary);
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  font-size: 1rem;
-  text-align: justify;
-  text-justify: inter-word;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-meta {
@@ -166,15 +223,10 @@
   color: var(--secondary);
 }
 
-.blog-meta time {
-  font-weight: 500;
-}
-
 .blog-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.25rem;
 }
 
 .tag {

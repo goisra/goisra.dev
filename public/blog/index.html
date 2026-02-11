@@ -255,27 +255,35 @@ body {
   <div class="blog-grid">
     <article class="blog-card">
       <div class="blog-card-content">
-        <div class="blog-author-section">
-          <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar">
-          <div class="author-info">
-            <h3 class="author-name">Israel Jesús García</h3>
-            <p class="author-role">Site Reliability Engineer | AWS User Group Puebla Leader</p>
+        <div class="blog-thumbnail">
+          <a href="https://goisra.dev/blog/amazon-sns-notifications/">
+            <img src="/images/blog-sns-1.webp" alt="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
+          </a>
+        </div>
+        
+        <div class="blog-card-body">
+          <div class="blog-author-section">
+            <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar">
+            <div class="author-info">
+              <h3 class="author-name"><a href="/about">Israel Jesús</a></h3>
+              <p class="author-role">Site Reliability Engineer | AWS User Group Puebla Leader</p>
+              <time datetime="2025-11-17" class="post-time">12w ago</time>
+            </div>
           </div>
-        </div>
-        
-        <div class="blog-card-header">
-          <h2><a href="https://goisra.dev/blog/amazon-sns-notifications/">Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</a></h2>
-        </div>
-        <p class="blog-excerpt">Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
-        
-        <div class="blog-meta">
-          <time datetime="2025-11-17">November 17, 2025</time>
-          <div class="blog-tags">
-            <span class="tag">amazon-sns</span>
-            <span class="tag">serverless</span>
-            <span class="tag">architecture</span>
-            <span class="tag">real-time</span>
-            <span class="tag">billing</span>
+          
+          <div class="blog-card-header">
+            <h2><a href="https://goisra.dev/blog/amazon-sns-notifications/">Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</a></h2>
+          </div>
+          <p class="blog-excerpt">Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
+          
+          <div class="blog-meta">
+            <div class="blog-tags">
+              <span class="tag">amazon-sns</span>
+              <span class="tag">serverless</span>
+              <span class="tag">architecture</span>
+              <span class="tag">real-time</span>
+              <span class="tag">billing</span>
+            </div>
           </div>
         </div>
       </div>
@@ -315,55 +323,96 @@ body {
 .blog-card {
   background: transparent;
   border-radius: 0;
-  padding: 2rem 0;
-  transition: transform 0.2s ease;
+  padding: 1.5rem 0;
   border: none;
   border-bottom: 1px solid var(--border);
 }
 
-.blog-card:hover {
-  transform: translateX(5px);
+.blog-card-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.blog-thumbnail {
+  flex-shrink: 0;
+  width: 280px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.blog-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.blog-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-author-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .author-avatar {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .author-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
 }
 
 .author-name {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
+}
+
+.author-name a {
   color: var(--primary);
+  text-decoration: none;
+}
+
+.author-name a:hover {
+  text-decoration: underline;
 }
 
 .author-role {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   margin: 0;
   color: var(--secondary);
 }
 
+.post-time {
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
 .blog-card-header {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .blog-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0;
   font-weight: 600;
   line-height: 1.3;
@@ -380,11 +429,15 @@ body {
 
 .blog-excerpt {
   color: var(--secondary);
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  font-size: 1rem;
-  text-align: justify;
-  text-justify: inter-word;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .blog-meta {
@@ -395,15 +448,10 @@ body {
   color: var(--secondary);
 }
 
-.blog-meta time {
-  font-weight: 500;
-}
-
 .blog-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.25rem;
 }
 
 .tag {
