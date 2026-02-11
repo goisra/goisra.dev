@@ -294,13 +294,8 @@ body {
 
 <div class="blog-single-container">
   <article class="post-single">
-    <div class="blog-author-header">
-      <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar-large">
-      <div class="author-details">
-        <h3 class="author-name-large">Israel Jesús García</h3>
-        <p class="author-role-large">Site Reliability Engineer</p>
-        <time datetime="2024-12-20" class="post-date">December 20, 2024</time>
-      </div>
+    <div class="featured-image">
+      <img src="/images/blog-sns-1.webp" alt="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
     </div>
     
     <header class="post-header">
@@ -308,6 +303,16 @@ body {
         Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS
       </h1>
     </header>
+    <div class="blog-author-header">
+      <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar-large">
+      <div class="author-details">
+        <h3 class="author-name-large">Israel Jesús García</h3>
+        <p class="author-role-large">Site Reliability Engineer</p>
+      </div>
+      <div class="post-date-wrapper">
+        <time datetime="2024-12-20" class="post-date">Published Dec 20, 2024</time>
+      </div>
+    </div>
     <div class="post-content"><p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
 <h2 id="what-is-amazon-sns">What is Amazon SNS?<a hidden class="anchor" aria-hidden="true" href="#what-is-amazon-sns">#</a></h2>
 <p>Amazon SNS is a fully managed pub/sub messaging service that allows you to send notifications to multiple subscribers through different channels such as email, SMS, mobile push notifications, and HTTP/HTTPS endpoints. It&rsquo;s designed to be highly available, scalable, and secure.</p>
@@ -427,45 +432,67 @@ body {
   padding: 0 var(--gap);
 }
 
+.featured-image {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .blog-author-header {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 
 .author-avatar-large {
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .author-details {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+  flex-grow: 1;
 }
 
 .author-name-large {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
   color: var(--primary);
 }
 
 .author-role-large {
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   margin: 0;
   color: var(--secondary);
+}
+
+.post-date-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .post-date {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-top: 0.25rem;
+  white-space: nowrap;
 }
 
 .post-single {
@@ -473,14 +500,14 @@ body {
 }
 
 .post-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .post-title {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 2rem 0;
+  margin: 0;
   color: var(--primary);
 }
 

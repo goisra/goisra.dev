@@ -2,16 +2,9 @@
 
 <div class="blog-single-container">
   <article class="post-single">
-    {{- if .Params.authorImage }}
-    <div class="blog-author-header">
-      <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar-large">
-      <div class="author-details">
-        <h3 class="author-name-large">{{ .Params.author | default "Israel Jesús García" }}</h3>
-        <p class="author-role-large">{{ .Params.role | default "Site Reliability Engineer" }}</p>
-        {{- if .Date }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "January 2, 2006" }}</time>
-        {{- end }}
-      </div>
+    {{- if .Params.featuredImage }}
+    <div class="featured-image">
+      <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
     </div>
     {{- end }}
     
@@ -21,6 +14,21 @@
         {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
       </h1>
     </header>
+
+    {{- if .Params.authorImage }}
+    <div class="blog-author-header">
+      <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar-large">
+      <div class="author-details">
+        <h3 class="author-name-large">{{ .Params.author | default "Israel Jesús García" }}</h3>
+        <p class="author-role-large">{{ .Params.role | default "Site Reliability Engineer" }}</p>
+      </div>
+      {{- if .Date }}
+      <div class="post-date-wrapper">
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">Published {{ .Date.Format "Jan 2, 2006" }}</time>
+      </div>
+      {{- end }}
+    </div>
+    {{- end }}
 
     {{- if .Content }}
     <div class="post-content">
@@ -51,45 +59,67 @@
   padding: 0 var(--gap);
 }
 
+.featured-image {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .blog-author-header {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 
 .author-avatar-large {
-  width: 80px;
-  height: 80px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .author-details {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+  flex-grow: 1;
 }
 
 .author-name-large {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
   color: var(--primary);
 }
 
 .author-role-large {
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   margin: 0;
   color: var(--secondary);
+}
+
+.post-date-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .post-date {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-top: 0.25rem;
+  white-space: nowrap;
 }
 
 .post-single {
@@ -97,14 +127,14 @@
 }
 
 .post-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .post-title {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 2rem 0;
+  margin: 0;
   color: var(--primary);
 }
 

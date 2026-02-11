@@ -7,6 +7,7 @@ author: "Israel Jesús García"
 role: "Site Reliability Engineer"
 linkedinUrl: "https://www.linkedin.com/in/israel-jesus-garcia-osorio"
 authorImage: "/images/foto-blog.jpg"
+featuredImage: "/images/blog-sns-1.webp"
 ---
 
 Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.
