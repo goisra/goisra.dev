@@ -1,83 +1,92 @@
 {{- define "main" }}
 
-<header class="page-header">
-  <h1>{{ .Title }}</h1>
-  {{- if .Params.description }}
-  <div class="post-description">{{ .Params.description }}</div>
-  {{- end }}
-</header>
+<div class="blog-container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Params.description }}
+    <div class="post-description">{{ .Params.description }}</div>
+    {{- end }}
+  </header>
 
-<div class="post-content">
-<div class="blog-grid">
-  {{- range .Pages }}
-  <article class="blog-card">
-    <div class="blog-card-content">
-      <div class="blog-card-header">
-        {{- if .Params.icon }}
-        <span class="blog-icon">{{ .Params.icon }}</span>
-        {{- end }}
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      </div>
-      
-      {{- if .Params.description }}
-      <p class="blog-excerpt">{{ .Params.description }}</p>
-      {{- end }}
-      
-      <div class="blog-meta">
-        {{- if .Date }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{- end }}
-        {{- if .Params.tags }}
-        <div class="blog-tags">
-          {{- range .Params.tags }}
-          <span class="tag">{{ . }}</span>
-          {{- end }}
+  <div class="blog-grid">
+    {{- range .Pages }}
+    <article class="blog-card">
+      <div class="blog-card-content">
+        {{- if .Params.authorImage }}
+        <div class="blog-author-section">
+          <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar">
+          <div class="author-info">
+            <h3 class="author-name">{{ .Params.author | default "Israel Jesús García" }}</h3>
+            <p class="author-role">{{ .Params.role | default "Site Reliability Engineer" }}</p>
+          </div>
         </div>
         {{- end }}
+        
+        <div class="blog-card-header">
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </div>
+        
+        {{- if .Params.description }}
+        <p class="blog-excerpt">{{ .Params.description }}</p>
+        {{- end }}
+        
+        <div class="blog-meta">
+          {{- if .Date }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- end }}
+          {{- if .Params.tags }}
+          <div class="blog-tags">
+            {{- range .Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{- end }}
+          </div>
+          {{- end }}
+        </div>
       </div>
+    </article>
+    {{- end }}
+    
+    {{- if eq (len .Pages) 0 }}
+    <div class="empty-state">
+      <p>🚀 Próximamente contenido nuevo...</p>
     </div>
-  </article>
-  {{- end }}
-  
-  {{- if eq (len .Pages) 0 }}
-  <div class="empty-state">
-    <p>🚀 Próximamente contenido nuevo...</p>
+    {{- end }}
   </div>
-  {{- end }}
-</div>
 </div>
 
 <style>
-.page-header {
+.blog-container {
   max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  margin: 0 auto;
+  padding: 0 var(--gap);
 }
 
-.post-content {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  margin-bottom: 1.5rem;
+}
+
+.post-description {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .blog-grid {
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-top: 2rem;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0;
 }
 
 .blog-card {
   background: transparent;
   border-radius: 0;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   transition: transform 0.2s ease;
   border: none;
   border-bottom: 1px solid var(--border);
@@ -87,22 +96,48 @@
   transform: translateX(5px);
 }
 
-.blog-card-header {
+.blog-author-section {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.blog-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary);
+}
+
+.author-role {
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--secondary);
+}
+
+.blog-card-header {
+  margin-bottom: 0.75rem;
 }
 
 .blog-card h2 {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 600;
+  line-height: 1.3;
 }
 
 .blog-card h2 a {
@@ -110,11 +145,15 @@
   text-decoration: none;
 }
 
+.blog-card h2 a:hover {
+  color: var(--secondary);
+}
+
 .blog-excerpt {
   color: var(--secondary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -125,13 +164,17 @@
   gap: 0.5rem;
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 1rem;
+}
+
+.blog-meta time {
+  font-weight: 500;
 }
 
 .blog-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 .tag {
@@ -144,10 +187,6 @@
 
 .tag::before {
   content: "#";
-}
-
-.read-more {
-  display: none;
 }
 
 .empty-state {

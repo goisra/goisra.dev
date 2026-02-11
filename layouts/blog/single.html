@@ -1,85 +1,195 @@
 {{- define "main" }}
 
-<article class="post-single">
-  <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
-    <h1 class="post-title">
-      {{ .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{ .Description }}
+<div class="blog-single-container">
+  <article class="post-single">
+    {{- if .Params.authorImage }}
+    <div class="blog-author-header">
+      <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar-large">
+      <div class="author-details">
+        <h3 class="author-name-large">{{ .Params.author | default "Israel Jesús García" }}</h3>
+        <p class="author-role-large">{{ .Params.role | default "Site Reliability Engineer" }}</p>
+        {{- if .Date }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "January 2, 2006" }}</time>
+        {{- end }}
+      </div>
     </div>
     {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
+    
+    <header class="post-header">
+      <h1 class="post-title">
+        {{ .Title }}
+        {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+      </h1>
+    </header>
+
+    {{- if .Content }}
+    <div class="post-content">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}{{ .Content }}{{ end }}
     </div>
     {{- end }}
-  </header>
-  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hidden }}
-  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-  {{- if (.Param "ShowToc") }}
-  {{- partial "toc.html" . }}
-  {{- end }}
 
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
-
-  <footer class="post-footer">
-    {{- $tags := .Params.tags }}
-    {{- if $tags }}
-    <ul class="post-tags">
-      {{- range $tags }}
-      {{- with $.Site.GetPage "tags" . }}
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <footer class="post-footer">
+      {{- $tags := .Params.tags }}
+      {{- if $tags }}
+      <ul class="post-tags">
+        {{- range $tags }}
+        {{- $tagName := . }}
+        <li><span class="tag-hash">#</span><span class="tag-name">{{ . }}</span></li>
+        {{- end }}
+      </ul>
       {{- end }}
-      {{- end }}
-    </ul>
-    {{- end }}
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
-    {{- if (.Param "ShowShareButtons") }}
-    {{- partial "share_icons.html" . -}}
-    {{- end }}
-  </footer>
-
-  {{- if (.Param "comments") }}
-  {{- partial "comments.html" . }}
-  {{- end }}
-</article>
+    </footer>
+  </article>
+</div>
 
 <style>
-.post-single {
+.blog-single-container {
   max-width: 1024px;
   margin: 0 auto;
-  padding-left: var(--gap);
-  padding-right: var(--gap);
+  padding: 0 var(--gap);
+}
+
+.blog-author-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.author-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author-name-large {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary);
+}
+
+.author-role-large {
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--secondary);
+}
+
+.post-date {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+}
+
+.post-single {
+  width: 100%;
 }
 
 .post-header {
   margin-bottom: 2rem;
 }
 
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+  color: var(--primary);
+}
+
 .post-content {
-  margin: 2rem 0;
+  margin: 0 0 3rem 0;
   line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 .post-content p,
 .post-content li {
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom: 1.5rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.post-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem 0;
+  color: var(--primary);
+}
+
+.post-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: var(--primary);
+}
+
+.post-content code {
+  background: var(--code-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.post-content pre {
+  background: var(--code-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.post-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.post-footer {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-tags li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.tag-hash {
+  color: var(--secondary);
+  margin-right: 0.2rem;
+}
+
+.tag-name {
+  color: var(--secondary);
+  font-size: 0.9rem;
 }
 </style>
 
