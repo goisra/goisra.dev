@@ -1,10 +1,10 @@
 ---
 title: "Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS"
-date: 2024-12-20
+date: 2025-11-17
 description: "Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for..."
 tags: ["amazon-sns", "serverless", "architecture", "real-time", "billing"]
 author: "Israel Jesús García"
-role: "Site Reliability Engineer"
+role: "Site Reliability Engineer | AWS User Group Puebla Leader"
 linkedinUrl: "https://www.linkedin.com/in/israel-jesus-garcia-osorio"
 authorImage: "/images/foto-blog.jpg"
 featuredImage: "/images/blog-sns-1.webp"

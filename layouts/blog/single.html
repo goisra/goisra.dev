@@ -15,12 +15,18 @@
       </h1>
     </header>
 
+    {{- if .Params.description }}
+    <div class="post-description">
+      <p>{{ .Params.description }}</p>
+    </div>
+    {{- end }}
+
     {{- if .Params.authorImage }}
     <div class="blog-author-header">
       <img src="{{ .Params.authorImage }}" alt="{{ .Params.author }}" class="author-avatar-large">
       <div class="author-details">
         <h3 class="author-name-large">{{ .Params.author | default "Israel Jesús García" }}</h3>
-        <p class="author-role-large">{{ .Params.role | default "Site Reliability Engineer" }}</p>
+        <p class="author-role-large">{{ .Params.role | default "Site Reliability Engineer | AWS User Group Puebla Leader" }}</p>
       </div>
       {{- if .Date }}
       <div class="post-date-wrapper">
@@ -64,11 +70,13 @@
   margin-bottom: 2rem;
   border-radius: 8px;
   overflow: hidden;
+  max-height: 400px;
 }
 
 .featured-image img {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   display: block;
 }
 
@@ -136,6 +144,17 @@
   line-height: 1.2;
   margin: 0;
   color: var(--primary);
+}
+
+.post-description {
+  margin-bottom: 1.5rem;
+}
+
+.post-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin: 0;
 }
 
 .post-content {

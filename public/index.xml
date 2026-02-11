@@ -23,6 +23,13 @@
       <description>Aprender AWS es más que conocer servicios: es adoptar la mentalidad que impulsa la innovación en la nube.</description>
     </item>
     <item>
+      <title>Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</title>
+      <link>https://goisra.dev/blog/amazon-sns-notifications/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://goisra.dev/blog/amazon-sns-notifications/</guid>
+      <description>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...</description>
+    </item>
+    <item>
       <title>AWS Lambda: Menos estrés, más serverLESS</title>
       <link>https://goisra.dev/talks/aws-lambda-serverless-itp/</link>
       <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
@@ -77,13 +84,6 @@
       <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://goisra.dev/talks/aws-lambda-serverless-online/</guid>
       <description>Webinar internacional sobre cómo AWS Lambda puede transformar el desarrollo de aplicaciones en la nube, simplificando procesos y mejorando la eficiencia.</description>
-    </item>
-    <item>
-      <title>Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</title>
-      <link>https://goisra.dev/blog/amazon-sns-notifications/</link>
-      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://goisra.dev/blog/amazon-sns-notifications/</guid>
-      <description>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...</description>
     </item>
   </channel>
 </rss>
