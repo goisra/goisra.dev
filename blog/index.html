@@ -255,36 +255,38 @@ body {
   <div class="blog-grid">
     <article class="blog-card">
       <div class="blog-card-content">
-        <div class="blog-thumbnail">
-          <a href="https://goisra.dev/blog/amazon-sns-notifications/">
-            <img src="/images/blog-sns-1.webp" alt="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
-          </a>
-        </div>
-        
-        <div class="blog-card-body">
+        <div class="blog-card-left">
           <div class="blog-author-section">
             <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar">
             <div class="author-info">
               <h3 class="author-name"><a href="/about">Israel Jesús</a></h3>
-              <p class="author-role">Site Reliability Engineer | AWS User Group Puebla Leader</p>
-              <time datetime="2025-11-17" class="post-time">12w ago</time>
+              <p class="author-role">Site Reliability Engineer | AWS User Group Puebla Leader
+              <br><time datetime="2025-11-17" class="post-time">12w ago</time>
+              </p>
             </div>
           </div>
           
-          <div class="blog-card-header">
-            <h2><a href="https://goisra.dev/blog/amazon-sns-notifications/">Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</a></h2>
-          </div>
-          <p class="blog-excerpt">Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
-          
-          <div class="blog-meta">
-            <div class="blog-tags">
-              <span class="tag">amazon-sns</span>
-              <span class="tag">serverless</span>
-              <span class="tag">architecture</span>
-              <span class="tag">real-time</span>
-              <span class="tag">billing</span>
+          <div class="blog-card-body">
+            <div class="blog-card-header">
+              <h2><a href="https://goisra.dev/blog/amazon-sns-notifications/">Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS</a></h2>
+            </div>
+            <p class="blog-excerpt">Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
+            
+            <div class="blog-meta">
+              <div class="blog-tags">
+                <span class="tag">amazon-sns</span>
+                <span class="tag">serverless</span>
+                <span class="tag">architecture</span>
+                <span class="tag">real-time</span>
+                <span class="tag">billing</span>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="blog-thumbnail">
+          <a href="https://goisra.dev/blog/amazon-sns-notifications/">
+            <img src="/images/blog-sns-1.webp" alt="Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS">
+          </a>
         </div>
       </div>
     </article>
@@ -323,7 +325,7 @@ body {
 .blog-card {
   background: transparent;
   border-radius: 0;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   border: none;
   border-bottom: 1px solid var(--border);
 }
@@ -332,6 +334,13 @@ body {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+  position: relative;
+}
+
+.blog-card-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-thumbnail {
@@ -340,6 +349,7 @@ body {
   height: 180px;
   border-radius: 8px;
   overflow: hidden;
+  align-self: flex-start;
 }
 
 .blog-thumbnail img {
@@ -355,7 +365,6 @@ body {
 }
 
 .blog-card-body {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -378,13 +387,12 @@ body {
 .author-info {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
 }
 
 .author-name {
   font-size: 0.95rem;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 0.15rem 0;
 }
 
 .author-name a {
@@ -400,6 +408,7 @@ body {
   font-size: 0.85rem;
   margin: 0;
   color: var(--secondary);
+  line-height: 1.3;
 }
 
 .post-time {
