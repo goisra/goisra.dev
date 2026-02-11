@@ -177,8 +177,8 @@ body {
   <meta property="og:locale" content="us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2024-12-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-12-20T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-11-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-17T00:00:00+00:00">
     <meta property="article:tag" content="Amazon-Sns">
     <meta property="article:tag" content="Serverless">
     <meta property="article:tag" content="Architecture">
@@ -222,8 +222,8 @@ body {
   "articleBody": "Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.\nWhat is Amazon SNS? Amazon SNS is a fully managed pub/sub messaging service that allows you to send notifications to multiple subscribers through different channels such as email, SMS, mobile push notifications, and HTTP/HTTPS endpoints. It’s designed to be highly available, scalable, and secure.\nArchitecture Overview The diagram above shows a typical SNS architecture where publishers send messages to SNS topics, which then distribute them to multiple subscribers including Lambda functions, SQS queues, HTTP endpoints, and mobile applications.\nKey Features Flexible Message Delivery SNS supports multiple protocols for message delivery:\nEmail/Email-JSON: Perfect for notifications and alerts SMS: Direct text messages to mobile phones Mobile Push: iOS, Android, and other mobile platforms HTTP/HTTPS: Webhooks to your services AWS Lambda: Trigger serverless functions Amazon SQS: Queue messages for processing Amazon Kinesis Data Firehose: Stream data for analytics Message Filtering Subscribers can filter messages based on message attributes, ensuring they only receive relevant notifications. This reduces unnecessary processing and improves efficiency.\nFan-Out Pattern SNS excels at implementing the fan-out pattern, where a single message is delivered to multiple subscribers simultaneously. This is ideal for:\nBroadcasting system alerts to multiple teams Triggering parallel processing workflows Distributing data to multiple analytics systems Real-World Use Cases 1. Application Alerts and Monitoring Monitor your applications and send real-time alerts when:\nSystem errors occur Performance thresholds are exceeded Security events are detected 2. User Notifications Keep your users informed with:\nOrder confirmations and shipping updates Account activity alerts Promotional campaigns 3. Workflow Orchestration Coordinate distributed systems by:\nTriggering Lambda functions for event-driven architectures Coordinating microservices communication Implementing saga patterns for distributed transactions Best Practices 1. Use Message Attributes for Filtering Instead of sending all messages to all subscribers, use message attributes to route messages intelligently:\n{ \"Type\": \"error\", \"Severity\": \"high\", \"Service\": \"payment-api\" } 2. Implement Idempotency Design your subscribers to handle duplicate messages gracefully, as SNS guarantees at-least-once delivery.\n3. Monitor with CloudWatch Set up CloudWatch alarms for:\nNumber of notifications failed Number of messages published Delivery success rates 4. Secure Your Topics Use IAM policies to control who can publish to topics Implement VPC endpoints for private communication Enable encryption at rest and in transit Cost Optimization SNS pricing is based on:\nNumber of API requests (publishes, notifications) Data transfer Notification type (SMS is more expensive than email) Tips to optimize costs:\nBatch messages when possible Use message filtering to reduce unnecessary deliveries Choose the most cost-effective delivery channel for your use case Getting Started Creating an SNS topic and subscription is straightforward:\nCreate a Topic: Define your message channel Subscribe Endpoints: Add email, SMS, Lambda, or other subscribers Publish Messages: Send notifications through the AWS console, CLI, or SDK Monitor: Track delivery and performance metrics Conclusion Amazon SNS is a powerful service that simplifies building event-driven and distributed applications. Its flexibility, scalability, and integration with other AWS services make it an essential tool for modern cloud architectures.\nWhether you’re building a simple notification system or orchestrating complex workflows, SNS provides the reliability and performance you need to keep your systems and users informed in real time.\n",
   "wordCount" : "556",
   "inLanguage": "en",
-  "datePublished": "2024-12-20T00:00:00Z",
-  "dateModified": "2024-12-20T00:00:00Z",
+  "datePublished": "2025-11-17T00:00:00Z",
+  "dateModified": "2025-11-17T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "Israel Jesús García"
@@ -303,14 +303,17 @@ body {
         Amazon SNS: The Key to Real-Time Notifications and Efficient Communication on AWS
       </h1>
     </header>
+    <div class="post-description">
+      <p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for...</p>
+    </div>
     <div class="blog-author-header">
       <img src="/images/foto-blog.jpg" alt="Israel Jesús García" class="author-avatar-large">
       <div class="author-details">
         <h3 class="author-name-large">Israel Jesús García</h3>
-        <p class="author-role-large">Site Reliability Engineer</p>
+        <p class="author-role-large">Site Reliability Engineer | AWS User Group Puebla Leader</p>
       </div>
       <div class="post-date-wrapper">
-        <time datetime="2024-12-20" class="post-date">Published Dec 20, 2024</time>
+        <time datetime="2025-11-17" class="post-date">Published Nov 17, 2025</time>
       </div>
     </div>
     <div class="post-content"><p>Do you want to alert your team in real time when a critical event occurs? Or send sales notifications to your users around the world? Amazon Simple Notification Service (SNS) is the perfect solution for sending messages quickly and securely, regardless of the type of audience.</p>
@@ -437,11 +440,13 @@ body {
   margin-bottom: 2rem;
   border-radius: 8px;
   overflow: hidden;
+  max-height: 400px;
 }
 
 .featured-image img {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   display: block;
 }
 
@@ -509,6 +514,17 @@ body {
   line-height: 1.2;
   margin: 0;
   color: var(--primary);
+}
+
+.post-description {
+  margin-bottom: 1.5rem;
+}
+
+.post-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--secondary);
+  margin: 0;
 }
 
 .post-content {
