@@ -1,6 +1,7 @@
 +++
 title = 'My Experience'
 draft = false
+layout = 'experience'
 
 [[experience]]
 title = "CTO & Co-Founder"
