@@ -4,6 +4,18 @@ draft = false
 layout = 'experience'
 
 [[experience]]
+title = "Site Reliability Engineer (SRE)"
+company = "Coming Soon"
+company_logo = ""
+company_url = ""
+employment_type = "Full-time"
+duration = "Feb. 2026 - Present · 1 mos"
+start_date = "2026-02"
+location = "Puebla, Mexico · Hybrid"
+description = ""
+skills = []
+
+[[experience]]
 title = "CTO & Co-Founder"
 company = "GoSoft"
 company_logo = "/images/gosoft_logo.jpg"

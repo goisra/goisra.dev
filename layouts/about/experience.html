@@ -34,8 +34,7 @@
             
             {{- if .description }}
             <div class="job-description" data-full-text="{{ .description }}">
-              <p class="description-text">{{ .description }}</p>
-              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
+              <span class="description-text">{{ .description }}</span> <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
             {{- end }}
           </div>
@@ -57,11 +56,30 @@ function toggleDescription(button) {
   if (isExpanded) {
     descContainer.classList.remove('expanded');
     button.textContent = '...see more';
+    button.style.display = 'inline';
   } else {
     descContainer.classList.add('expanded');
     button.textContent = 'see less';
   }
 }
+
+// Hide see more button if text doesn't overflow
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.job-description').forEach(function(desc) {
+    const text = desc.querySelector('.description-text');
+    const button = desc.querySelector('.toggle-description');
+    
+    if (text && button) {
+      // Check if content exceeds 2 lines
+      const lineHeight = parseFloat(window.getComputedStyle(text).lineHeight);
+      const maxHeight = lineHeight * 2;
+      
+      if (text.scrollHeight <= maxHeight) {
+        button.style.display = 'none';
+      }
+    }
+  });
+});
 </script>
 
 <style>
@@ -156,7 +174,7 @@ function toggleDescription(button) {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--primary);
-  margin: 0 0 0.1rem 0;
+  margin: 0 0 0.05rem 0;
   line-height: 1.4;
 }
 
@@ -164,23 +182,23 @@ function toggleDescription(button) {
   font-size: 0.95rem;
   color: var(--content);
   font-weight: 400;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.05rem;
 }
 
 .employment-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.05rem;
 }
 
 .location-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .job-description {
-  margin: 0.75rem 0;
+  margin: 0.75rem 0 0 0;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--content);
@@ -197,8 +215,9 @@ function toggleDescription(button) {
 }
 
 .job-description.expanded .description-text {
-  display: block;
+  display: inline;
   -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .toggle-description {
@@ -211,8 +230,8 @@ function toggleDescription(button) {
   padding: 0;
   margin: 0;
   transition: color 0.2s ease;
-  display: inline-block;
-  margin-top: 0.25rem;
+  display: inline;
+  white-space: nowrap;
 }
 
 .toggle-description:hover {
