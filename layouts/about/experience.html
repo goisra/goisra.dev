@@ -7,9 +7,52 @@
     <div class="experience-container">
       <div class="experience-list">
         {{- $prevCompany := "" }}
+        {{- $nikeShown := false }}
         {{- range $index, $exp := .Params.experience }}
         
-        <div class="experience-item {{ if eq $exp.parent_company $prevCompany }}grouped-item{{ end }}">
+        {{- if and (eq $exp.parent_company "Nike") (not $nikeShown) }}
+        {{/* Show Nike header only once */}}
+        <div class="experience-item company-header">
+          <div class="company-logo">
+            {{- if $exp.company_url }}
+            <a href="{{ $exp.company_url }}" target="_blank" rel="noopener noreferrer">
+            {{- end }}
+              <img src="{{ $exp.company_logo }}" alt="{{ $exp.company }}">
+            {{- if $exp.company_url }}
+            </a>
+            {{- end }}
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">{{ $exp.company }}</h3>
+            <div class="employment-info">Full-time · 1 yr 7 mos</div>
+            <div class="location-info">Remote</div>
+          </div>
+        </div>
+        {{- $nikeShown = "true" }}
+        {{- end }}
+        
+        {{- if eq $exp.parent_company "Nike" }}
+        {{/* Nike sub-positions without logo */}}
+        <div class="experience-item sub-position">
+          <div class="company-logo-placeholder"></div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">{{ .title }}</h3>
+            <div class="employment-info">{{ .duration }}</div>
+            <div class="location-info">{{ .location }}</div>
+            
+            {{- if .description }}
+            <div class="job-description" data-full-text="{{ .description }}">
+              <span class="description-text">{{ .description }}</span> <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
+            </div>
+            {{- end }}
+          </div>
+        </div>
+        
+        {{- else if ne $exp.parent_company "Nike" }}
+        {{/* Regular positions */}}
+        <div class="experience-item">
           <div class="company-logo">
             {{- if .company_url }}
             <a href="{{ .company_url }}" target="_blank" rel="noopener noreferrer">
@@ -39,6 +82,7 @@
             {{- end }}
           </div>
         </div>
+        {{- end }}
         
         {{- $prevCompany = default .company .parent_company }}
         {{- end }}
@@ -120,15 +164,19 @@ document.addEventListener('DOMContentLoaded', function() {
   border-bottom: none;
 }
 
-.experience-item.grouped-item {
-  padding-top: 0.5rem;
-  border-left: 2px solid var(--border);
-  margin-left: 28px;
-  padding-left: 40px;
+.experience-item.company-header {
+  border-bottom: none;
+  padding-bottom: 0.75rem;
 }
 
-.experience-item.grouped-item .company-logo {
-  display: none;
+.experience-item.sub-position {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.company-logo-placeholder {
+  width: 56px;
+  min-width: 56px;
 }
 
 .company-logo {
@@ -174,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--primary);
-  margin: 0 0 0.05rem 0;
+  margin: 0;
   line-height: 1.4;
 }
 
@@ -182,19 +230,19 @@ document.addEventListener('DOMContentLoaded', function() {
   font-size: 0.95rem;
   color: var(--content);
   font-weight: 400;
-  margin-bottom: 0.05rem;
+  margin-bottom: 0.025rem;
 }
 
 .employment-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 0.05rem;
+  margin-bottom: 0.025rem;
 }
 
 .location-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .job-description {
@@ -211,12 +259,14 @@ document.addEventListener('DOMContentLoaded', function() {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
 .job-description.expanded .description-text {
   display: inline;
   -webkit-line-clamp: unset;
+  line-clamp: unset;
   overflow: visible;
 }
 
@@ -247,19 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
   .experience-item {
     flex-direction: column;
     gap: 0.75rem;
-  }
-  
-  .experience-item.grouped-item {
-    flex-direction: column;
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
-  }
-  
-  .experience-item.grouped-item .company-logo {
-    display: flex;
   }
   
   .company-logo {

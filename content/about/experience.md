@@ -12,7 +12,9 @@ employment_type = "Full-time"
 duration = "Feb. 2026 - Present · 1 mos"
 start_date = "2026-02"
 location = "Puebla, Mexico · Hybrid"
-description = ""
+description = """Cloud Engineer within the Retail Technology team, contributing to the design, development, and operation of cloud-native solutions on AWS supporting large-scale retail and supply chain systems. Collaborated with cross-functional teams to translate business and operational requirements into scalable, secure, and highly available cloud architectures.
+
+Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads."""
 skills = []
 
 [[experience]]
