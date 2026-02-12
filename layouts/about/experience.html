@@ -71,9 +71,7 @@
             <h3 class="position-title">{{ .title }}</h3>
             <div class="company-name">{{ .company }}</div>
             <div class="employment-info">{{ .employment_type }} · {{ .duration }}</div>
-            {{- if .location }}
             <div class="location-info">{{ .location }}</div>
-            {{- end }}
             
             {{- if .description }}
             <div class="job-description" data-full-text="{{ .description }}">
