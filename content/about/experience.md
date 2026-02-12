@@ -53,10 +53,8 @@ employment_type = "Full-time"
 duration = "Aug. 2024 - Present · 1 yr 7 mos"
 start_date = "2024-08"
 location = "Remote"
-description = """Cloud Engineer within the Retail Technology team, contributing to the design, development, and operation of cloud-native solutions on AWS supporting large-scale retail and supply chain systems. Collaborated with cross-functional teams to translate business and operational requirements into scalable, secure, and highly available cloud architectures.
-
-Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads."""
-skills = ["Amazon Web Services (AWS)", "Infrastructure as code (IaC)", "Kubernetes", "Serverless", "DevOps"]
+description = ""
+skills = []
 parent_company = "Nike"
 
 [[experience]]
