@@ -23,7 +23,7 @@
 .header-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--border);
@@ -43,8 +43,9 @@
   color: var(--secondary);
   text-decoration: none;
   transition: color 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
 .experience-link:hover {
@@ -75,12 +76,6 @@
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .header-navigation {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  
   .header-navigation h1 {
     font-size: 2rem;
   }
