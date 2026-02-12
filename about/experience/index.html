@@ -284,30 +284,113 @@ body {
 </header>
 <main class="main">
 <main class="main">
-  <div class="about-content-plain">
+  <div class="experience-page">
     <div class="header-navigation">
       <h1>My Experience</h1>
-      <a href="/about/experience/" class="experience-link">My Experience</a>
+      <a href="/about/" class="about-link">About</a>
     </div>
-    
-    <div class="about-text">
+    <div class="experience-container">
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="company-logo">
+            <span class="company-initial">G</span>
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">CTO &amp; Co-Founder</h3>
+            <div class="company-name">GoSoft</div>
+            <div class="employment-info">Jornada completa · may. 2025 - actualidad · 10 meses</div>
+            <div class="job-description">
+              <p>Helping clients in every step of their software development journey including program, product, architecture, development, security and production support.</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="company-logo">
+            <span class="company-initial">N</span>
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">Cloud Engineer</h3>
+            <div class="company-name">Nike</div>
+            <div class="employment-info">Jornada completa · 1 año 7 meses</div>
+            <div class="location-info">En remoto</div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="company-logo">
+            <span class="company-initial">N</span>
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">Technical Cloud</h3>
+            <div class="company-name">Nike</div>
+            <div class="employment-info">ago. 2024 - dic. 2025 · 1 año 5 meses</div>
+            <div class="location-info">Beaverton, Oregón, Estados Unidos</div>
+            <div class="job-description">
+              <p>Cloud Engineer within the Retail Technology team, contributing to the design, development, and operation of cloud-native solutions on AWS supporting large-scale retail and supply chain systems. Collaborated with cross-functional teams to deliver robust infrastructure and automated deployment pipelines.</p>
+            </div>
+            <div class="skills-row">
+              <span class="skills-icon">🎓</span>
+              <span class="skills-text">Amazon Web Services (AWS), Infrastructure as code (IaC), 3 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="company-logo">
+            <span class="company-initial">M</span>
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">MLOps Engineer</h3>
+            <div class="company-name">Mirai Innovation Research Institute</div>
+            <div class="employment-info">Jornada completa · feb. 2025 - jun. 2025 · 5 meses</div>
+            <div class="location-info">Osaka, Japón · Presencial</div>
+            <div class="job-description">
+              <p>Initiated and led the transition of machine learning models from research to production in the cloud, designing the first MLOps workflows on AWS for the team in Japan. Built and deployed cloud-native pipelines to enable scalable and reliable ML operations.</p>
+            </div>
+            <div class="skills-row">
+              <span class="skills-icon">🎓</span>
+              <span class="skills-text">Amazon Web Services (AWS), MLOps, 3 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="company-logo">
+            <span class="company-initial">Q</span>
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">Software Engineer</h3>
+            <div class="company-name">Quantum Automation MX</div>
+            <div class="employment-info">Jornada completa · ene. 2022 - dic. 2023 · 2 años</div>
+            <div class="location-info">Puebla, México · Híbrido</div>
+            <div class="job-description">
+              <p>Designed and developed cloud-native and serverless solutions on AWS for industries such as Logistics (Supply Chain), Airports, and Robotics, applying Clean Architecture principles to build maintainable, scalable, and resilient systems.</p>
+            </div>
+            <div class="skills-row">
+              <span class="skills-icon">🎓</span>
+              <span class="skills-text">Amazon Web Services (AWS), DevOps, 3 aptitudes más</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
 
 <style>
-.about-content-plain {
+.experience-page {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 var(--gap);
-  background: transparent !important;
 }
 
 .header-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--border);
 }
@@ -317,11 +400,10 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
-  background: transparent !important;
 }
 
-.experience-link {
-  font-size: 1.2rem;
+.about-link {
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--secondary);
   text-decoration: none;
@@ -330,30 +412,121 @@ body {
   border-radius: 8px;
 }
 
-.experience-link:hover {
+.about-link:hover {
   color: var(--primary);
   background: var(--theme);
 }
 
-.about-text {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  line-height: 1.8;
-  text-align: justify;
-  text-justify: inter-word;
+.experience-container {
+  padding: 0;
 }
 
-.about-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--entry);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: var(--theme);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-initial {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.position-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.company-name {
+  font-size: 1rem;
   color: var(--content);
-  background: transparent !important;
-  text-align: justify;
-  text-justify: inter-word;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.employment-info {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.25rem;
+}
+
+.location-info {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.job-description {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--content);
+}
+
+.job-description p {
+  margin: 0;
+  text-align: left;
+}
+
+.skills-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--theme);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.skills-icon {
+  font-size: 1.1rem;
+}
+
+.skills-text {
+  font-weight: 500;
 }
 
  
@@ -368,22 +541,19 @@ body {
     font-size: 2rem;
   }
   
-  .experience-link {
-    font-size: 1rem;
+  .about-link {
+    font-size: 1.2rem;
   }
-}
-
- 
-.about-content-plain *,
-.about-content-plain .post-single,
-.about-content-plain .post-content,
-.about-content-plain .page-header,
-.about-content-plain .entry-content,
-.about-content-plain article {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+  
+  .experience-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .company-logo {
+    width: 48px;
+    height: 48px;
+  }
 }
 </style>
     </main>
