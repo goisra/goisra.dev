@@ -1,7 +1,10 @@
 {{- define "main" }}
 <main class="main">
   <div class="about-content-plain">
-    <h1>{{.Title}}</h1>
+    <div class="header-navigation">
+      <h1>{{.Title}}</h1>
+      <a href="/about/experience/" class="experience-link">My Experience</a>
+    </div>
     
     <div class="about-text">
       {{- .Content }}
@@ -17,12 +20,36 @@
   background: transparent !important;
 }
 
-.about-content-plain h1 {
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.header-navigation h1 {
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
   background: transparent !important;
+}
+
+.experience-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.experience-link:hover {
+  color: var(--primary);
+  background: var(--theme);
 }
 
 .about-text {
@@ -60,6 +87,23 @@ body .about-text * {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .header-navigation h1 {
+    font-size: 2rem;
+  }
+  
+  .experience-link {
+    font-size: 1rem;
+  }
 }
 </style>
 {{- end }}
