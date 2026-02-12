@@ -33,6 +33,18 @@ Got an idea in mind? Learn more at gosoftsolutions.com"""
 skills = ["Program Management", "Product Development", "Architecture", "Software Development", "Security", "Production Support"]
 
 [[experience]]
+title = "Founder & Leader"
+company = "AWS User Group Puebla"
+company_logo = "/images/aws_puebla_logo.jpg"
+company_url = "https://www.meetup.com/awsusergroupmx-puebla/"
+employment_type = "Community"
+duration = "Sep. 2024 - Present · 1 yr 6 mos"
+start_date = "2024-09"
+location = "Puebla, Mexico"
+description = """As founder of the AWS User Group Puebla, I have created a dynamic team that has brought together more than 100 people at our events to share ideas, and explore best practices in the cloud. We facilitate collaboration between colleagues and enhance professional growth in each meeting."""
+skills = []
+
+[[experience]]
 title = "Cloud Engineer"
 company = "Nike"
 company_logo = "/images/nike_logo.jpg"
