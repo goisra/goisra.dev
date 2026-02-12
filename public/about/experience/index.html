@@ -307,7 +307,8 @@ Got an idea in mind? Learn more at gosoftsolutions.com">
               <p class="description-text">Helping clients in every step of their software development journey including program, product, architecture, development, security and production support.
 
 #More than technology. An experience.
-Got an idea in mind? Learn more at gosoftsolutions.com <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+Got an idea in mind? Learn more at gosoftsolutions.com</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
           </div>
         </div>
@@ -329,7 +330,8 @@ Got an idea in mind? Learn more at gosoftsolutions.com <button class="toggle-des
 Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads.">
               <p class="description-text">Cloud Engineer within the Retail Technology team, contributing to the design, development, and operation of cloud-native solutions on AWS supporting large-scale retail and supply chain systems. Collaborated with cross-functional teams to translate business and operational requirements into scalable, secure, and highly available cloud architectures.
 
-Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads. <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads.</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
           </div>
         </div>
@@ -351,7 +353,8 @@ Automated infrastructure provisioning and operational tasks using Infrastructure
 Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads.">
               <p class="description-text">Cloud Engineer within the Retail Technology team, contributing to the design, development, and operation of cloud-native solutions on AWS supporting large-scale retail and supply chain systems. Collaborated with cross-functional teams to translate business and operational requirements into scalable, secure, and highly available cloud architectures.
 
-Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads. <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+Automated infrastructure provisioning and operational tasks using Infrastructure as Code (IaC), improving deployment consistency, reliability, and operational efficiency. Applied AWS best practices to ensure performance optimization, security, and cost efficiency across retail cloud workloads.</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
           </div>
         </div>
@@ -373,7 +376,8 @@ Automated infrastructure provisioning and operational tasks using Infrastructure
 Designed scalable and secure AWS architectures for model training, deployment, monitoring, and feedback delivery, integrating computer vision and speech processing systems to provide personalized insights and improve overall systems performance.">
               <p class="description-text">Initiated and led the transition of machine learning models from research to production in the cloud, designing the first MLOps workflows on AWS for the team in Japan. Built and deployed cloud-native pipelines to operationalize machine learning workloads, enabling real-time data processing and inference in a production environment.
 
-Designed scalable and secure AWS architectures for model training, deployment, monitoring, and feedback delivery, integrating computer vision and speech processing systems to provide personalized insights and improve overall systems performance. <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+Designed scalable and secure AWS architectures for model training, deployment, monitoring, and feedback delivery, integrating computer vision and speech processing systems to provide personalized insights and improve overall systems performance.</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
           </div>
         </div>
@@ -395,7 +399,8 @@ Designed scalable and secure AWS architectures for model training, deployment, m
 Applied AWS best practices to optimize performance, security, and cost efficiency, delivering reliable automation platforms and real-time data processing across distributed environments.">
               <p class="description-text">Designed and developed cloud-native and serverless solutions on AWS for industries such as Logistics (Supply Chain), Airports, and Robotics, applying Clean Architecture principles to build maintainable, scalable, and testable systems. Built event-driven architectures that automated complex processes and enabled secure integration between physical systems and cloud infrastructure.
 
-Applied AWS best practices to optimize performance, security, and cost efficiency, delivering reliable automation platforms and real-time data processing across distributed environments. <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+Applied AWS best practices to optimize performance, security, and cost efficiency, delivering reliable automation platforms and real-time data processing across distributed environments.</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
           </div>
         </div>
@@ -407,7 +412,6 @@ Applied AWS best practices to optimize performance, security, and cost efficienc
 <script>
 function toggleDescription(button) {
   const descContainer = button.parentElement;
-  const descText = descContainer.querySelector('.description-text');
   const isExpanded = descContainer.classList.contains('expanded');
   
   if (isExpanded) {
@@ -431,7 +435,7 @@ function toggleDescription(button) {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-top: 0;
 }
 
@@ -477,6 +481,7 @@ function toggleDescription(button) {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .company-logo a {
@@ -511,7 +516,7 @@ function toggleDescription(button) {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--primary);
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.1rem 0;
   line-height: 1.4;
 }
 
@@ -519,13 +524,13 @@ function toggleDescription(button) {
   font-size: 0.95rem;
   color: var(--content);
   font-weight: 400;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .employment-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .location-info {
@@ -544,16 +549,16 @@ function toggleDescription(button) {
 .job-description .description-text {
   margin: 0;
   text-align: left;
+  white-space: pre-line;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  white-space: pre-line;
 }
 
 .job-description.expanded .description-text {
-  -webkit-line-clamp: unset;
   display: block;
+  -webkit-line-clamp: unset;
 }
 
 .toggle-description {
@@ -564,10 +569,10 @@ function toggleDescription(button) {
   font-weight: 600;
   cursor: pointer;
   padding: 0;
-  margin-left: 0.25rem;
+  margin: 0;
   transition: color 0.2s ease;
-  display: inline;
-  vertical-align: baseline;
+  display: inline-block;
+  margin-top: 0.25rem;
 }
 
 .toggle-description:hover {

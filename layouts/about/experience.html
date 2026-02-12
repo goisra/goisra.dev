@@ -34,7 +34,8 @@
             
             {{- if .description }}
             <div class="job-description" data-full-text="{{ .description }}">
-              <p class="description-text">{{ .description }} <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
+              <p class="description-text">{{ .description }}</p>
+              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
             </div>
             {{- end }}
           </div>
@@ -51,7 +52,6 @@
 <script>
 function toggleDescription(button) {
   const descContainer = button.parentElement;
-  const descText = descContainer.querySelector('.description-text');
   const isExpanded = descContainer.classList.contains('expanded');
   
   if (isExpanded) {
@@ -75,7 +75,7 @@ function toggleDescription(button) {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-top: 0;
 }
 
@@ -121,6 +121,7 @@ function toggleDescription(button) {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .company-logo a {
@@ -155,7 +156,7 @@ function toggleDescription(button) {
   font-size: 1.125rem;
   font-weight: 600;
   color: var(--primary);
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.1rem 0;
   line-height: 1.4;
 }
 
@@ -163,13 +164,13 @@ function toggleDescription(button) {
   font-size: 0.95rem;
   color: var(--content);
   font-weight: 400;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .employment-info {
   font-size: 0.875rem;
   color: var(--secondary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .location-info {
@@ -188,16 +189,16 @@ function toggleDescription(button) {
 .job-description .description-text {
   margin: 0;
   text-align: left;
+  white-space: pre-line;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  white-space: pre-line;
 }
 
 .job-description.expanded .description-text {
-  -webkit-line-clamp: unset;
   display: block;
+  -webkit-line-clamp: unset;
 }
 
 .toggle-description {
@@ -208,10 +209,10 @@ function toggleDescription(button) {
   font-weight: 600;
   cursor: pointer;
   padding: 0;
-  margin-left: 0.25rem;
+  margin: 0;
   transition: color 0.2s ease;
-  display: inline;
-  vertical-align: baseline;
+  display: inline-block;
+  margin-top: 0.25rem;
 }
 
 .toggle-description:hover {
