@@ -3,7 +3,6 @@
   <div class="experience-page">
     <div class="header-navigation">
       <h1>{{.Title}}</h1>
-      <a href="/about/" class="about-link">About</a>
     </div>
 
     {{- if .Params.experience }}
@@ -59,7 +58,6 @@
 
 .header-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
@@ -71,21 +69,6 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
-}
-
-.about-link {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--secondary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-}
-
-.about-link:hover {
-  color: var(--primary);
-  background: var(--theme);
 }
 
 .experience-container {
@@ -210,10 +193,6 @@
   
   .header-navigation h1 {
     font-size: 2rem;
-  }
-  
-  .about-link {
-    font-size: 1.2rem;
   }
   
   .experience-item {
