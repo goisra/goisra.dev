@@ -9,10 +9,6 @@
         {{- $prevCompany := "" }}
         {{- range $index, $exp := .Params.experience }}
         
-        {{- if and (ne $prevCompany "") (ne $exp.parent_company $prevCompany) }}
-        <div class="experience-divider"></div>
-        {{- end }}
-        
         <div class="experience-item {{ if eq $exp.parent_company $prevCompany }}grouped-item{{ end }}">
           <div class="company-logo">
             {{- if .company_url }}
@@ -38,19 +34,7 @@
             
             {{- if .description }}
             <div class="job-description" data-full-text="{{ .description }}">
-              <p class="description-text">{{ .description }}</p>
-              <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
-            </div>
-            {{- end }}
-            
-            {{- if .skills }}
-            <div class="skills-section">
-              <span class="skills-label">Skills:</span>
-              <div class="skills-list">
-                {{- range .skills }}
-                <span class="skill-tag">{{ . }}</span>
-                {{- end }}
-              </div>
+              <p class="description-text">{{ .description }} <button class="toggle-description" onclick="toggleDescription(this)">...see more</button></p>
             </div>
             {{- end }}
           </div>
@@ -104,12 +88,6 @@ function toggleDescription(button) {
   flex-direction: column;
 }
 
-.experience-divider {
-  height: 1px;
-  background: var(--border);
-  margin: 1.5rem 0;
-}
-
 .experience-item {
   display: flex;
   gap: 1rem;
@@ -117,6 +95,11 @@ function toggleDescription(button) {
   background: transparent;
   border: none;
   box-shadow: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
 }
 
 .experience-item.grouped-item {
@@ -225,41 +208,14 @@ function toggleDescription(button) {
   font-weight: 600;
   cursor: pointer;
   padding: 0;
-  margin-top: 0.25rem;
+  margin-left: 0.25rem;
   transition: color 0.2s ease;
+  display: inline;
+  vertical-align: baseline;
 }
 
 .toggle-description:hover {
   color: var(--primary);
-}
-
-.skills-section {
-  margin-top: 1rem;
-  padding-top: 0.75rem;
-}
-
-.skills-label {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--primary);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skill-tag {
-  background: var(--theme);
-  color: var(--content);
-  padding: 0.4rem 0.75rem;
-  border-radius: 16px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: 1px solid var(--border);
 }
 
 /* Responsive Design */
@@ -289,15 +245,6 @@ function toggleDescription(button) {
   .company-logo {
     width: 48px;
     height: 48px;
-  }
-  
-  .skills-list {
-    flex-direction: column;
-  }
-  
-  .skill-tag {
-    display: inline-block;
-    width: fit-content;
   }
 }
 </style>
