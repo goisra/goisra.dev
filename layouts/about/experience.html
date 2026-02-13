@@ -6,52 +6,7 @@
     {{- if .Params.experience }}
     <div class="experience-container">
       <div class="experience-list">
-        {{- $prevCompany := "" }}
-        {{- $nikeShown := false }}
         {{- range $index, $exp := .Params.experience }}
-        
-        {{- if and (eq $exp.parent_company "Nike") (not $nikeShown) }}
-        {{/* Show Nike header only once */}}
-        <div class="experience-item company-header">
-          <div class="company-logo">
-            {{- if $exp.company_url }}
-            <a href="{{ $exp.company_url }}" target="_blank" rel="noopener noreferrer">
-            {{- end }}
-              <img src="{{ $exp.company_logo }}" alt="{{ $exp.company }}">
-            {{- if $exp.company_url }}
-            </a>
-            {{- end }}
-          </div>
-          
-          <div class="experience-details">
-            <h3 class="position-title">{{ $exp.company }}</h3>
-            <div class="employment-info">Full-time · 1 yr 7 mos</div>
-            <div class="location-info">Remote</div>
-          </div>
-        </div>
-        {{- $nikeShown = "true" }}
-        {{- end }}
-        
-        {{- if eq $exp.parent_company "Nike" }}
-        {{/* Nike sub-positions without logo */}}
-        <div class="experience-item sub-position">
-          <div class="company-logo-placeholder"></div>
-          
-          <div class="experience-details">
-            <h3 class="position-title">{{ .title }}</h3>
-            <div class="employment-info">{{ .duration }}</div>
-            <div class="location-info">{{ .location }}</div>
-            
-            {{- if .description }}
-            <div class="job-description" data-full-text="{{ .description }}">
-              <span class="description-text">{{ .description }}</span> <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
-            </div>
-            {{- end }}
-          </div>
-        </div>
-        
-        {{- else if ne $exp.parent_company "Nike" }}
-        {{/* Regular positions */}}
         <div class="experience-item">
           <div class="company-logo">
             {{- if .company_url }}
@@ -80,9 +35,6 @@
             {{- end }}
           </div>
         </div>
-        {{- end }}
-        
-        {{- $prevCompany = default .company .parent_company }}
         {{- end }}
       </div>
     </div>
@@ -216,22 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .experience-item:last-child {
   border-bottom: none;
-}
-
-.experience-item.company-header {
-  border-bottom: none;
-  padding-bottom: 0.75rem;
-}
-
-.experience-item.sub-position {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  border-bottom: none;
-}
-
-.company-logo-placeholder {
-  width: 56px;
-  min-width: 56px;
 }
 
 .company-logo {
