@@ -87,6 +87,44 @@
       </div>
     </div>
     {{- end }}
+
+    {{- if .Params.volunteering }}
+    <h2 class="volunteering-title">Volunteering</h2>
+    <div class="volunteering-container">
+      <div class="volunteering-list">
+        {{- range $index, $vol := .Params.volunteering }}
+        <div class="experience-item">
+          <div class="company-logo">
+            {{- if .company_url }}
+            <a href="{{ .company_url }}" target="_blank" rel="noopener noreferrer">
+            {{- end }}
+              {{- if .company_logo }}
+              <img src="{{ .company_logo }}" alt="{{ .company }}">
+              {{- else }}
+              <span class="company-initial">{{ substr .company 0 1 }}</span>
+              {{- end }}
+            {{- if .company_url }}
+            </a>
+            {{- end }}
+          </div>
+          
+          <div class="experience-details">
+            <h3 class="position-title">{{ .title }}</h3>
+            <div class="company-name">{{ .company }}</div>
+            <div class="employment-info">{{ .employment_type }} · {{ .duration }}</div>
+            <div class="location-info">{{ .location }}</div>
+            
+            {{- if .description }}
+            <div class="job-description" data-full-text="{{ .description }}">
+              <span class="description-text">{{ .description }}</span> <button class="toggle-description" onclick="toggleDescription(this)">...see more</button>
+            </div>
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
   </div>
 </main>
 
@@ -141,6 +179,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .experience-container {
   padding: 0;
+}
+
+.volunteering-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 0;
+}
+
+.volunteering-container {
+  padding: 0;
+}
+
+.volunteering-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-list {
@@ -253,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .job-description .description-text {
   margin: 0;
-  text-align: left;
+  text-align: justify;
   white-space: pre-line;
   overflow: hidden;
   display: -webkit-box;
