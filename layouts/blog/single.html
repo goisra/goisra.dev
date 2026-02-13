@@ -251,6 +251,99 @@
   color: var(--secondary);
   font-size: 0.9rem;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featured-image {
+    margin-bottom: 2rem;
+    max-height: 300px;
+  }
+  
+  .featured-image img {
+    height: 300px;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .blog-author-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .post-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-link-top {
+    margin-bottom: 1rem;
+  }
+  
+  .back-link {
+    font-size: 0.95rem;
+  }
+  
+  .featured-image {
+    margin-bottom: 1.5rem;
+    max-height: 220px;
+  }
+  
+  .featured-image img {
+    height: 220px;
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-author-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .author-avatar-large {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .author-name-large {
+    font-size: 0.9rem;
+  }
+  
+  .author-role-large {
+    font-size: 0.8rem;
+  }
+  
+  .post-date-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .post-date {
+    font-size: 0.8rem;
+  }
+  
+  .post-description p {
+    font-size: 0.95rem;
+  }
+  
+  .post-content {
+    font-size: 1rem;
+  }
+  
+  .post-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post-content h3 {
+    font-size: 1.2rem;
+  }
+}
 </style>
 
 {{- end }}{{/* end main */}}
