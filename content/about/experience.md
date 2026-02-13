@@ -146,4 +146,5 @@ duration = "Jun. 2024 - Jun. 2025 · 1 yr 1 mes"
 start_date = "2024-06"
 location = ""
 description = """Microsoft Learn Student Ambassadors is a global group of university leaders eager to help other students, build strong communities and develop technical and career skills for the future. As well as helping others to build communities and connect with communities that help enhance skills through technology."""
-skills = []+++
+skills = []
++++
