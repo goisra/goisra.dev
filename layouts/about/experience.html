@@ -64,7 +64,6 @@
             <h3 class="position-title">{{ .title }}</h3>
             <div class="company-name">{{ .company }}</div>
             <div class="employment-info">{{ .employment_type }} · {{ .duration }}</div>
-            <div class="location-info">{{ .location }}</div>
             
             {{- if .description }}
             <div class="job-description" data-full-text="{{ .description }}">
@@ -138,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
   font-weight: 700;
   color: var(--primary);
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-top: 0;
 }
 
