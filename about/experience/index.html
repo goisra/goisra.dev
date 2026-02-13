@@ -693,13 +693,44 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   .experience-item {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75rem;
   }
   
   .company-logo {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  .experience-details {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .position-title {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+  
+  .company-name {
+    font-size: 0.85rem;
+  }
+  
+  .employment-info {
+    font-size: 0.8rem;
+  }
+  
+  .location-info {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-description {
+    flex-basis: 100%;
+    margin-left: 48px;
+    margin-top: 0.5rem;
   }
 }
 </style>
