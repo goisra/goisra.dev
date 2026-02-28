@@ -40,7 +40,7 @@ theme = 'PaperMod'
   [params.profileMode]
     enabled = true
     title = "Israel Jesús"
-    subtitle = "Site Reliability Engineer (SRE) @Kigo"
+    subtitle = "Site Reliability Engineer (SRE) @ Kigo"
     imageUrl = "/images/pic_redes.jpg"
     imageWidth = 150
     imageHeight = 150
