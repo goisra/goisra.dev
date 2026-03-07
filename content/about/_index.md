@@ -5,7 +5,7 @@ draft = false
 
 Hey, there! 👋
 
-I'm Israel Jesús, Cloud Engineer at Nike, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work within Retail Technology environments, designing and operating cloud platforms that support large-scale, business-critical systems.
+I'm Israel Jesús, Site Reliability Engineer at Kigo, specialized in building scalable, secure, and cloud-native solutions on Amazon Web Services (AWS). I currently work in Smart Mobility environments, designing and operating cloud platforms that power solutions aimed at transforming how people move and interact with mobility systems at scale.
 
 My experience spans cloud architecture, serverless and event-driven systems, Infrastructure as Code (IaC), and MLOps practices. I've led the transition of machine learning workloads from research to production, designed cloud platforms for real-time data processing, and applied Clean Architecture principles to build maintainable and resilient systems across diverse industries.
 

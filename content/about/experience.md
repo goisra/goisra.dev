@@ -6,8 +6,8 @@ layout = 'experience'
 [[experience]]
 title = "Site Reliability Engineer (SRE)"
 company = "Kigo"
-company_logo = "/images/gosoft_logo.jpg"
-company_url = "https://kigo.pro/
+company_logo = "/images/kigo_logo.jpg"
+company_url = "https://kigo.pro"
 employment_type = "Full-time"
 duration = "Feb. 2026 - Present · 1 mos"
 start_date = "2026-02"
